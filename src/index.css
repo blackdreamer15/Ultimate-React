@@ -4,3 +4,9 @@
   --color-medium: #ffa94d;
   --color-dark: #ff922b;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
