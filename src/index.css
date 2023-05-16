@@ -32,3 +32,8 @@ body {
   column-gap: 4rem;
   align-items: start;
 }
+
+.button {
+  background-color: var(--color-medium);
+  color: #343a40;
+}
