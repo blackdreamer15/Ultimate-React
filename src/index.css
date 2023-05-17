@@ -67,3 +67,7 @@ body {
   border-radius: 7px;
   transition: 0.5s;
 }
+
+.selected {
+  background-color: var(--color-lightest);
+}
