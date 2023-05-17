@@ -36,4 +36,6 @@ body {
 .button {
   background-color: var(--color-medium);
   color: #343a40;
+  padding: 0.8rem 1.2rem;
+  border: none;
 }
