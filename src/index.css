@@ -136,3 +136,9 @@ label::first-letter {
   margin-right: 4px;
   font-size: 1.8rem;
 }
+
+input,
+select {
+  border: 1px solid var(--color-light);
+  border-radius: 4px;
+}
