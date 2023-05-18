@@ -112,4 +112,6 @@ form {
   display: grid;
   align-items: center;
   gap: 1.2rem;
+
+  background-color: var(--color-lightest);
 }
