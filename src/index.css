@@ -109,4 +109,6 @@ body {
 
 form {
   font-size: 1.6rem;
+  display: grid;
+  align-items: center;
 }
