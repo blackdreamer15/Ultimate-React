@@ -78,3 +78,8 @@ body {
   width: 100%;
   grid-row: span 2;
 }
+
+.sidebar li h3 {
+  grid-row: 1;
+  grid-column: 2;
+}
