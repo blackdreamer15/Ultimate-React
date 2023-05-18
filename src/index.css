@@ -106,3 +106,7 @@ body {
 .red {
   color: #e03131;
 }
+
+form {
+  font-size: 1.6rem;
+}
