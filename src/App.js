@@ -21,11 +21,15 @@ const initialFriends = [
 
 export default function App() {
   return (
-    <div className="app"></div>
+    <div className="app">
+      <FriendList />
+    </div>
   );
 }
 
 
 function FriendList() {
-  return ();
+  return (
+
+  );
 }
