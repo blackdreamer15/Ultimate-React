@@ -19,7 +19,7 @@ const initialFriends = [
   },
 ];
 
-function App() {
+export default function App() {
   return (
     
   );
