@@ -18,3 +18,9 @@ const initialFriends = [
     balance: 0,
   },
 ];
+
+function App() {
+  return (
+    
+  );
+}
