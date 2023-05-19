@@ -33,3 +33,9 @@ function FriendList() {
 
   );
 }
+
+function Friend() {
+  return (
+  
+ );
+}
