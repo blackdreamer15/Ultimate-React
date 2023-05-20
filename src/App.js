@@ -32,7 +32,10 @@ function FriendList() {
   return (
     {
       initialFriends.map(friend => (
-        <Friend
+        <Friend id={friend.id}
+          name={friend.name}
+          image={friend.image}
+          balance={friend.balance}
         />
       ))
     }
