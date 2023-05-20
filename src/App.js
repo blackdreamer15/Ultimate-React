@@ -42,7 +42,7 @@ function FriendList() {
   );
 }
 
-function Friend() {
+function Friend({ id, name, image, balance }) {
   return (
   
  );
