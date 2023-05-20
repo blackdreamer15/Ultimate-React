@@ -30,16 +30,18 @@ export default function App() {
 
 function FriendList() {
   return (
-    {
-      initialFriends.map(friend => (
-        <Friend id={friend.id}
-          name={friend.name}
-          image={friend.image}
-          balance={friend.balance}
-        />
-      ))
-    }
-  );
+    <div>
+      {
+        initialFriends.map(friend => (
+          <Friend id={friend.id}
+            name={friend.name}
+            image={friend.image}
+            balance={friend.balance}
+          />
+        ))
+      }
+    </div>
+  )
 }
 
 function Friend({ id, name, image, balance }) {
