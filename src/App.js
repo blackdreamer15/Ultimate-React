@@ -30,7 +30,12 @@ export default function App() {
 
 function FriendList() {
   return (
-
+    {
+      initialFriends.map(friend => (
+        <Friend
+        />
+      ))
+    }
   );
 }
 
