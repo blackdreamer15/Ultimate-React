@@ -30,7 +30,7 @@ export default function App() {
 
 function FriendList() {
   return (
-    <div>
+    <ul className="sidebar">
       {
         initialFriends.map(friend => (
           <Friend id={friend.id}
@@ -40,7 +40,7 @@ function FriendList() {
           />
         ))
       }
-    </div>
+    </ul>
   )
 }
 
