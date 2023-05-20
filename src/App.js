@@ -49,6 +49,7 @@ function Friend({ id, name, image, balance }) {
     <li>
       <img src={image} alt={name} />
       <h3>{name}</h3>
+      <p>{balance}</p>
     </li>
   );
 }
