@@ -33,7 +33,7 @@ function FriendList() {
     <ul className="sidebar">
       {
         initialFriends.map(friend => (
-          <Friend id={friend.id}
+          <Friend key={friend.id}
             name={friend.name}
             image={friend.image}
             balance={friend.balance}
