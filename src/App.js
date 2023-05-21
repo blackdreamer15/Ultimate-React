@@ -50,13 +50,19 @@ function Friend({ id, name, image, balance }) {
       <img src={image} alt={name} />
       <h3>{name}</h3>
 
-      {balance > 0 ? (
+      {balance > 0 ?
         <p className="green">
           {name} owes you {balance}€
         </p>
-      ) : (
+        :
+        ((balance < 0) ?
+          <p className="red">
+            You owe {name} you {balance}€
+          </p>
+          : (
 
-          )}
+            )
+        )}
       <button className="button">Select</button>
     </li>
   );
