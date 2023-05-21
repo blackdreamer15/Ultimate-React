@@ -69,3 +69,9 @@ function Friend({ name, image, balance }) {
     </li>
   );
 }
+
+function AddFriendForm() {
+  return (
+  
+);
+}
