@@ -60,8 +60,10 @@ function Friend({ id, name, image, balance }) {
             You owe {name} you {balance}€
           </p>
           : (
-
-            )
+            <p>
+              You and {name} are even
+            </p>
+          )
         )}
       <button className="button">Select</button>
     </li>
