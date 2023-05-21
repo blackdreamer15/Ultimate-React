@@ -84,7 +84,8 @@ function Button({ children }) {
 function AddFriendForm() {
   return (
     <form className="form-add-friend">
-
+      <label>👫Friend name</label>
+      <label>🎇Image URL</label>
     </form>
   );
 }
