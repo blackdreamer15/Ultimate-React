@@ -82,7 +82,7 @@ function Button({ children }) {
 
 function AddFriendForm() {
   return (
-    <form className="form">
+    <form className="form-add-friend">
 
     </form>
   );
