@@ -44,7 +44,7 @@ function FriendList() {
   )
 }
 
-function Friend({ id, name, image, balance }) {
+function Friend({ name, image, balance }) {
   return (
     <li>
       <img src={image} alt={name} />
