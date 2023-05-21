@@ -70,8 +70,18 @@ function Friend({ name, image, balance }) {
   );
 }
 
+
+
+function Button({ children }) {
+  return (
+    <button className="button">{children}</button>
+  );
+}
+
+
+
 function AddFriendForm() {
   return (
-  
-);
+    
+  );
 }
