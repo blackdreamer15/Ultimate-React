@@ -65,7 +65,7 @@ function Friend({ name, image, balance }) {
             </p>
           )
         )}
-      <button className="button">Select</button>
+      <Button>Select</Button>
     </li>
   );
 }
