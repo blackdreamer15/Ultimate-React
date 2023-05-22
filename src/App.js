@@ -89,7 +89,10 @@ function AddFriendForm({ name, setName }) {
   return (
     <form className="form-add-friend">
       <label>👫Friend name</label>
-      <input type="text" value={name} />
+      <input type="text" value={name}
+        onChange={e => setName(e.target.value)}
+      />
+
       <label>🎇Image URL</label>
       <input type="text" />
     </form>
