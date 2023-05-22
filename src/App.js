@@ -85,12 +85,12 @@ function Button({ children }) {
 
 
 
-function AddFriendForm({ name, setName }) {
+function AddFriendForm({ name, onSetName }) {
   return (
     <form className="form-add-friend">
       <label>👫Friend name</label>
       <input type="text" value={name}
-        onChange={e => setName(e.target.value)}
+        onChange={e => onSetName(e.target.value)}
       />
 
       <label>🎇Image URL</label>
