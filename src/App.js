@@ -24,10 +24,6 @@ const initialFriends = [
 export default function App() {
   const [name, setName] = useState("");
 
-  const handleChangeName() {
-
-  }
-
   return (
     <div className="app">
       <FriendList />
