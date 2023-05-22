@@ -89,7 +89,7 @@ function AddFriendForm({ name, setName }) {
   return (
     <form className="form-add-friend">
       <label>👫Friend name</label>
-      <input type="text" />
+      <input type="text" value={name} />
       <label>🎇Image URL</label>
       <input type="text" />
     </form>
