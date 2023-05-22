@@ -23,6 +23,7 @@ const initialFriends = [
 
 export default function App() {
   const [name, setName] = useState("");
+  const [image, setImage] = useState("");
 
   return (
     <div className="app">
