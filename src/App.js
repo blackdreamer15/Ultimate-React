@@ -28,7 +28,7 @@ export default function App() {
   return (
     <div className="app">
       <FriendList />
-      <AddFriendForm name={name} onSetName={setName} />
+      <AddFriendForm name={name} onSetName={setName} image={image} onSetImage={setImage} />
     </div>
   );
 }
