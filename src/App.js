@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const initialFriends = [
   {
     id: 118836,
@@ -82,6 +84,8 @@ function Button({ children }) {
 
 
 function AddFriendForm() {
+  const [name, setName] = useState();
+
   return (
     <form className="form-add-friend">
       <label>👫Friend name</label>
