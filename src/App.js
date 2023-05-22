@@ -27,7 +27,7 @@ export default function App() {
   return (
     <div className="app">
       <FriendList />
-      <AddFriendForm />
+      <AddFriendForm name={name} onSetName={setName} />
     </div>
   );
 }
@@ -85,7 +85,7 @@ function Button({ children }) {
 
 
 
-function AddFriendForm() {
+function AddFriendForm({ name, setName }) {
   return (
     <form className="form-add-friend">
       <label>👫Friend name</label>
