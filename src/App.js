@@ -22,6 +22,8 @@ const initialFriends = [
 ];
 
 export default function App() {
+  const [name, setName] = useState();
+
   return (
     <div className="app">
       <FriendList />
@@ -84,8 +86,6 @@ function Button({ children }) {
 
 
 function AddFriendForm() {
-  const [name, setName] = useState();
-
   return (
     <form className="form-add-friend">
       <label>👫Friend name</label>
