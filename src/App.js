@@ -106,3 +106,9 @@ function AddFriendForm({ name, onSetName, image, onSetImage }) {
     </form>
   );
 }
+
+function SplitBillForm() {
+  return (
+    
+  );
+}
