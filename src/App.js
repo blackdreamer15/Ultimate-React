@@ -27,8 +27,13 @@ export default function App() {
 
   return (
     <div className="app">
-      <FriendList />
-      <AddFriendForm name={name} onSetName={setName} image={image} onSetImage={setImage} />
+      <div className="sidebar">
+        <FriendList />
+
+        <AddFriendForm name={name} onSetName={setName} image={image} onSetImage={setImage} />
+
+
+      </div>
     </div>
   );
 }
@@ -36,7 +41,7 @@ export default function App() {
 
 function FriendList() {
   return (
-    <ul className="sidebar">
+    <ul>
       {
         initialFriends.map(friend => (
           <Friend key={friend.id}
