@@ -95,7 +95,7 @@ function AddFriendForm({ name, onSetName, image, onSetImage }) {
       />
 
       <label>🎇Image URL</label>
-      <input type="text" />
+      <input type="text" value={image} />
     </form>
   );
 }
