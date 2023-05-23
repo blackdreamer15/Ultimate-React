@@ -86,7 +86,7 @@ function Button({ children }) {
 
 
 
-function AddFriendForm({ name, onSetName }) {
+function AddFriendForm({ name, onSetName, image, onSetImage }) {
   return (
     <form className="form-add-friend">
       <label>👫Friend name</label>
