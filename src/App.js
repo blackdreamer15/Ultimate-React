@@ -95,7 +95,7 @@ function AddFriendForm({ name, onSetName, image, onSetImage }) {
       />
 
       <label>🎇Image URL</label>
-      <input type="text" value={image} onChange={ } />
+      <input type="text" value={image} onChange={e => ()} />
     </form>
   );
 }
