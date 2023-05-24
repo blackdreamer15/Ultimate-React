@@ -34,6 +34,8 @@ export default function App() {
 
         <Button>Add Friend</Button>
       </div>
+
+      <SplitBillForm />
     </div>
   );
 }
