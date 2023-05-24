@@ -109,6 +109,8 @@ function AddFriendForm({ name, onSetName, image, onSetImage }) {
 
 function SplitBillForm() {
   return (
-    
+    <form className="form-split-bill">
+
+    </form>
   );
 }
