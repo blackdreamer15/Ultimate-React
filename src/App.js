@@ -115,6 +115,8 @@ function SplitBillForm() {
       <label>💰 BIll value</label>
 
       <label>🧍 Your expense</label>
+
+      <label>👫 X's expense</label>
     </form>
   );
 }
