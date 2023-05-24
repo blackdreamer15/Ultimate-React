@@ -113,6 +113,8 @@ function SplitBillForm() {
       <h2>Split a bill with X</h2>
 
       <label>💰 BIll value</label>
+
+      <label>🧍 Your expense</label>
     </form>
   );
 }
