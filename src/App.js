@@ -94,7 +94,7 @@ function Button({ children }) {
 
 
 function AddFriendForm({ name, onSetName, image, onSetImage }) {
-  const [isClosed, setIsClosed] = useState();
+  const [isClosed, setIsClosed] = useState(false);
 
   return (
     <form className="form-add-friend">
