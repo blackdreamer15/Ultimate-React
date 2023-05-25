@@ -124,8 +124,8 @@ function SplitBillForm() {
       <input type="text" disabled />
 
       <select>
-        <option>You</option>
-        <option>X</option>
+        <option value="user">You</option>
+        <option value="friend">X</option>
       </select>
 
       <Button>Split bill</Button>
