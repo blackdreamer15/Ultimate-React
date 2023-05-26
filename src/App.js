@@ -106,6 +106,10 @@ function Friend({ name, image, balance }) {
 
 function AddFriendForm({ name, onSetName, image, onSetImage }) {
 
+  function handleClickToAddFriend() {
+
+  }
+
   return (
     <form className="form-add-friend">
       <label>👫 Friend name</label>
