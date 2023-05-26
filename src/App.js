@@ -62,7 +62,7 @@ export default function App() {
 
 
 function FriendList() {
-  const [friendList, setFriendList] = useState();
+  const [friendList, setFriendList] = useState([]);
 
   return (
     <ul>
