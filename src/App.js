@@ -108,8 +108,8 @@ function Friend({ name, image, balance }) {
 
 function AddFriendForm({ name, onSetName, image, onSetImage }) {
 
-  function handleClickToAddFriend() {
-
+  function handleClickToAddFriend(e) {
+    e.preventDefault();
   }
 
   return (
