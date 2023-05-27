@@ -112,10 +112,10 @@ function AddFriendForm() {
     e.preventDefault();
 
     const newFriend = {
-      id: new Date.now(),
       name: name,
       image: image
     };
+    console.log(newFriend);
   }
 
   return (
