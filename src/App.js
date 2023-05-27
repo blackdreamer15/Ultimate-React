@@ -126,7 +126,7 @@ function AddFriendForm() {
       />
 
       <label>🎇 Image URL</label>
-      <input type="text" value={image} onChange={e => onSetImage(e.target.value)} />
+      <input type="text" value={image} onChange={e => setImage(e.target.value)} />
 
       <Button onClick={handleClickToAddFriend}>Add</Button>
     </form>
