@@ -112,14 +112,14 @@ function AddFriendForm() {
     e.preventDefault();
 
     const newFriend = {
-      id,
-      name: ,
-      image: 
+      id: new Date.now(),
+      name: name,
+      image: image
     };
   }
 
   return (
-    <form className="form-add-friend">
+    <form className="form-add-friend" onSubmit={ }>
       <label>👫 Friend name</label>
       <input type="text" value={name}
         onChange={e => setName(e.target.value)}
@@ -128,7 +128,7 @@ function AddFriendForm() {
       <label>🎇 Image URL</label>
       <input type="text" value={image} onChange={e => setImage(e.target.value)} />
 
-      <Button onClick={handleClickToAddFriend}>Add</Button>
+      <Button>Add</Button>
     </form>
   );
 }
