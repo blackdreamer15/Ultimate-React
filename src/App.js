@@ -104,7 +104,7 @@ function Friend({ name, image, balance }) {
 }
 
 
-function AddFriendForm({ name, onSetName, image, onSetImage }) {
+function AddFriendForm() {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
 
