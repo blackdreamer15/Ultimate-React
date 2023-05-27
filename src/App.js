@@ -30,8 +30,6 @@ function Button({ onClick, children }) {
 
 
 export default function App() {
-  const [name, setName] = useState("");
-  const [image, setImage] = useState("");
   const [showAddFriend, setShowAddFriend] = useState(false);
 
   function handleClicking() {
@@ -44,7 +42,7 @@ export default function App() {
         <FriendList />
 
         {showAddFriend &&
-          <AddFriendForm name={name} onSetName={setName} image={image} onSetImage={setImage} />
+          <AddFriendForm />
         }
 
         <Button onClick={handleClicking}>
@@ -107,9 +105,17 @@ function Friend({ name, image, balance }) {
 
 
 function AddFriendForm({ name, onSetName, image, onSetImage }) {
+  const [name, setName] = useState("");
+  const [image, setImage] = useState("");
 
   function handleClickToAddFriend(e) {
     e.preventDefault();
+
+    const newFriend = {
+      id,
+      name: ,
+      image: 
+    };
   }
 
   return (
