@@ -111,7 +111,11 @@ function AddFriendForm() {
   function handleSubmitForm(e) {
     e.preventDefault();
 
-
+    const newFriend = {
+      id: new Date.now(),
+      name: name,
+      image: image
+    };
   }
 
   return (
