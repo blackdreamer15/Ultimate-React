@@ -108,7 +108,7 @@ function AddFriendForm() {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
 
-  function handleClickToAddFriend(e) {
+  function handleSubmitForm(e) {
     e.preventDefault();
 
     const newFriend = {
@@ -119,7 +119,7 @@ function AddFriendForm() {
   }
 
   return (
-    <form className="form-add-friend" onSubmit={ }>
+    <form className="form-add-friend" onSubmit={handleSubmitForm}>
       <label>👫 Friend name</label>
       <input type="text" value={name}
         onChange={e => setName(e.target.value)}
