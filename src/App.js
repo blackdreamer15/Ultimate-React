@@ -43,7 +43,10 @@ export default function App() {
         <FriendList />
 
         {showAddFriend &&
-          <AddFriendForm />
+          <AddFriendForm
+            friendList={friendList}
+            onSetFriendList={setFriendList}
+          />
         }
 
         <Button onClick={handleClicking}>
