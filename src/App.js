@@ -116,7 +116,8 @@ function AddFriendForm({ friendList, onSetFriendList }) {
 
     const newFriend = {
       name: name,
-      image: image
+      image: image,
+      balance: 0
     };
     console.log(newFriend);
     onSetFriendList((friendList) => friendList.push(newFriend))
