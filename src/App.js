@@ -68,7 +68,7 @@ function FriendList({ friendList }) {
   return (
     <ul>
       {
-        friendList.map(friend => (
+        friendList.map((friend, index) => (
           <Friend key={friend.id}
             name={friend.name}
             image={friend.image}
