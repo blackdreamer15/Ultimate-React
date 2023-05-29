@@ -63,7 +63,7 @@ export default function App() {
 }
 
 
-function FriendList() {
+function FriendList({ friendList }) {
 
   return (
     <ul>
