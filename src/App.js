@@ -116,7 +116,7 @@ function AddFriendForm({ friendList, onSetFriendList }) {
 
     const newFriend = {
       id: crypto.randomUUID(),
-      name: name,
+      name,
       image: `${image}?=${name}`,
       balance: 0
     };
