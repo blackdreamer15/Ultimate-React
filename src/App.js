@@ -40,7 +40,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="sidebar">
-        <FriendList />
+        <FriendList friendList={friendList} />
 
         {showAddFriend &&
           <AddFriendForm
@@ -119,6 +119,7 @@ function AddFriendForm({ friendList, onSetFriendList }) {
       image: image
     };
     console.log(newFriend);
+    // onSetFriendList((friendList) => friendList.)
   }
 
   return (
