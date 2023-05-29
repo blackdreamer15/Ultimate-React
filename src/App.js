@@ -119,7 +119,8 @@ function AddFriendForm({ friendList, onSetFriendList }) {
       image: image
     };
     console.log(newFriend);
-    // onSetFriendList((friendList) => friendList.)
+    onSetFriendList((friendList) => friendList.push(newFriend))
+    console.log(friendList);
   }
 
   return (
