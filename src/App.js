@@ -128,7 +128,7 @@ function AddFriendForm({ friendList, onSetFriendList }) {
     setImage("https://i.pravatar.cc/48");
 
     // console.log(newFriend);
-    // onSetFriendList((friendList) => friendList.push(newFriend))
+    onSetFriendList((friendList) => friendList.push(newFriend))
     // console.log(friendList);
   }
 
