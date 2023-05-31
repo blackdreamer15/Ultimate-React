@@ -153,7 +153,7 @@ function SplitBillForm() {
       <h2>Split a bill with X</h2>
 
       <label>💰 BIll value</label>
-      <input type="text" value={bill} />
+      <input type="text" value={bill} onChange={e => { }} />
 
       <label>🧍 Your expense</label>
       <input type="text" />
