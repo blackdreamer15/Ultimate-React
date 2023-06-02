@@ -6,6 +6,8 @@ export default function App() {
 
 function BillInput() {
     return (
-        <p>How much was the bill?</p>
+        <div>
+            <p>How much was the bill?</p>
+        </div>
     );
 }
