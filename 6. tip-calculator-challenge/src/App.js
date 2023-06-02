@@ -7,7 +7,7 @@ export default function App() {
 function BillInput() {
     return (
         <div>
-            <p>How much was the bill?</p>
+            <label>How much was the bill?</label>
             <input type="text" />
         </div>
     );
