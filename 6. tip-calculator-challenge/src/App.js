@@ -16,3 +16,9 @@ function BillInput() {
         </div>
     );
 }
+
+function SelectPercentage() {
+    return (
+        
+    );
+}
