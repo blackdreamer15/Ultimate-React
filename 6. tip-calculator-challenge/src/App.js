@@ -7,7 +7,7 @@ export default function App() {
 }
 
 function BillInput() {
-    const [bill, setBill] = useState();
+    const [bill, setBill] = useState(0);
 
     return (
         <div>
