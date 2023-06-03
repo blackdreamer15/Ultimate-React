@@ -20,7 +20,8 @@ function BillInput() {
 function SelectPercentage() {
     return (
         <div>
-
+            <label></label>
+            <input type="text" />
         </div>
     );
 }
