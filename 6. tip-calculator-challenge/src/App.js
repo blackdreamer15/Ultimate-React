@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function App() {
     return (
         <BillInput />
@@ -5,6 +7,8 @@ export default function App() {
 }
 
 function BillInput() {
+
+
     return (
         <div>
             <label>How much was the bill?</label>
