@@ -12,7 +12,7 @@ function BillInput() {
     return (
         <div>
             <label>How much was the bill?</label>
-            <input type="text" value={bill} />
+            <input type="text" value={bill} onChange={ } />
         </div>
     );
 }
