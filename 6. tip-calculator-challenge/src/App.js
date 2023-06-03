@@ -12,7 +12,7 @@ function BillInput() {
     return (
         <div>
             <label>How much was the bill?</label>
-            <input type="text" value={bill} onChange={e => setBill(e.target.value)} />
+            <input type="text" value={bill} onChange={e => setBill(Number(e.target.value))} />
         </div>
     );
 }
