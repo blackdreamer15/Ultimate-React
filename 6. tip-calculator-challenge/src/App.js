@@ -18,6 +18,8 @@ function BillInput() {
 }
 
 function SelectPercentage() {
+    const [percentage, setPercentage] = useState();
+
     return (
         <div>
             <label></label>
