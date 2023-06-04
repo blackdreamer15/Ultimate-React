@@ -20,7 +20,7 @@ function BillInput() {
     );
 }
 
-function SelectPercentage() {
+function SelectPercentage({ children }) {
     const [percentage, setPercentage] = useState(0);
 
     return (
