@@ -23,7 +23,7 @@ function SelectPercentage() {
     return (
         <div>
             <label></label>
-            <input type="text" value={percentage} onChange={e => setPercentage(e.target.value)} />
+            <input type="text" value={percentage} onChange={e => setPercentage(Number(e.target.value))} />
         </div>
     );
 }
