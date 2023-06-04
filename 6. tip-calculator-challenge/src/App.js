@@ -25,7 +25,7 @@ function SelectPercentage({ children }) {
 
     return (
         <div>
-            <label></label>
+            <label>{children}</label>
             <input type="text" value={percentage} onChange={e => setPercentage(Number(e.target.value))} />
         </div>
     );
