@@ -34,9 +34,9 @@ function SelectPercentage({ children }) {
             <label>{children}</label>
 
             <select value={percentage} onChange={e => setPercentage(Number(e.target.value))}>
-                <option></option>
-                <option></option>
-                <option></option>
+                <option>It was okay ()</option>
+                <option>It was good ()</option>
+                <option>Absolutely amazing! ()</option>
             </select>
         </div>
     );
