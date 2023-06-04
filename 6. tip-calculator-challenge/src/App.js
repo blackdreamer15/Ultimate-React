@@ -4,7 +4,7 @@ export default function App() {
     return (
         <div>
             <BillInput />
-            <SelectPercentage />
+            <SelectPercentage>How did you like the service?</SelectPercentage>
         </div>
     );
 }
