@@ -2,7 +2,9 @@ import { useState } from "react";
 
 export default function App() {
     return (
-        <BillInput />
+        <div>
+            <BillInput />
+        </div>
     );
 }
 
