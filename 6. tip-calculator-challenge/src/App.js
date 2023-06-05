@@ -14,6 +14,12 @@ export default function App() {
     );
 }
 
+function TipCalculator() {
+    return (
+        
+    );
+}
+
 function BillInput() {
     const [bill, setBill] = useState(0);
 
