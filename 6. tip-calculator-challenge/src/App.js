@@ -2,6 +2,12 @@ import { useState } from "react";
 
 export default function App() {
     return (
+        
+    );
+}
+
+function TipCalculator() {
+    return (
         <div>
             <BillInput />
             <SelectPercentage>
@@ -11,12 +17,6 @@ export default function App() {
                 How did your friend like the service?
             </SelectPercentage>
         </div>
-    );
-}
-
-function TipCalculator() {
-    return (
-        
     );
 }
 
