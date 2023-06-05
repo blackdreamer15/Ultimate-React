@@ -23,7 +23,7 @@ function TipCalculator() {
     );
 }
 
-function BillInput() {
+function BillInput({ bill, onSetBill }) {
 
     return (
         <div>
