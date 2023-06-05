@@ -48,3 +48,9 @@ function SelectPercentage({ children }) {
         </div>
     );
 }
+
+function OUtput() {
+    return (
+        
+    );
+}
