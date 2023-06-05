@@ -16,6 +16,7 @@ function TipCalculator() {
             <SelectPercentage>
                 How did your friend like the service?
             </SelectPercentage>
+            <Output />
         </div>
     );
 }
