@@ -49,7 +49,7 @@ function SelectPercentage({ percentage, onSetPercentage, children }) {
         <div>
             <label>{children}</label>
 
-            <select value={percentage} onChange={e => setPercentage(Number(e.target.value))}>
+            <select value={percentage} onChange={e => onSetPercentage(Number(e.target.value))}>
                 <option value={0}>Dissatisfied (0%)</option>
                 <option value={5}>It was okay (5%)</option>
                 <option value={10}>It was good (10%)</option>
