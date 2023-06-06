@@ -9,6 +9,7 @@ export default function App() {
 function TipCalculator() {
     const [bill, setBill] = useState(0);
     const [percentage, setPercentage] = useState(0);
+    const [percentage, setPercentage] = useState(0);
 
     return (
         <div>
