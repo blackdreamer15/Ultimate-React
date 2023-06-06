@@ -16,15 +16,15 @@ function TipCalculator() {
             <BillInput bill={bill} onSetBill={setBill} />
 
             <SelectPercentage
-                percentage={percentage}
-                onSetPercentage={setPercentage}
+                percentage={percentage1}
+                onSetPercentage={setPercentage1}
             >
                 How did you like the service?
             </SelectPercentage>
 
             <SelectPercentage
-                percentage={percentage}
-                onSetPercentage={setPercentage}
+                percentage={percentage2}
+                onSetPercentage={setPercentage2}
             >
                 How did your friend like the service?
             </SelectPercentage>
