@@ -29,7 +29,7 @@ function TipCalculator() {
                 How did your friend like the service?
             </SelectPercentage>
 
-            <Output bill={bill} />
+            <Output bill={bill} tip1={percentage1} tip2={percentage2} />
         </div>
     );
 }
