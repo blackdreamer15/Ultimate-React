@@ -65,6 +65,6 @@ function Output({ bill, tip1, tip2 }) {
     const tip = (tip1 + tip2) / 2;
 
     return (
-        <h1>You pay ${bill + tip} (${bill} + ${tip} tip)</h1>
+        <h2>You pay ${bill + tip} (${bill} + ${tip} tip)</h2>
     );
 }
