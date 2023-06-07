@@ -68,3 +68,9 @@ function Output({ bill, tip1, tip2 }) {
         <h2>You pay ${bill + tip} (${bill} + ${tip} tip)</h2>
     );
 }
+
+function Reset() {
+    return (
+        
+    );
+}
