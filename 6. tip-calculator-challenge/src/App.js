@@ -28,6 +28,7 @@ function TipCalculator() {
             >
                 How did your friend like the service?
             </SelectPercentage>
+
             <Output bill={bill} />
         </div>
     );
@@ -38,6 +39,7 @@ function BillInput({ bill, onSetBill }) {
     return (
         <div>
             <label>How much was the bill?</label>
+
             <input type="text" value={bill} onChange={e => onSetBill(Number(e.target.value))} />
         </div>
     );
