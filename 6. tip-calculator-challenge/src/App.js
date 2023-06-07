@@ -61,7 +61,7 @@ function SelectPercentage({ percentage, onSetPercentage, children }) {
     );
 }
 
-function Output({ bill, tip }) {
+function Output({ bill, tip1, tip2 }) {
     return (
         <h1>You pay ${bill + tip} (${bill} + ${tip} tip)</h1>
     );
