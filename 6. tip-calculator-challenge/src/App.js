@@ -34,6 +34,8 @@ function TipCalculator() {
             </SelectPercentage>
 
             <Output bill={bill} tip1={percentage1} tip2={percentage2} />
+
+            <Reset />
         </div>
     );
 }
