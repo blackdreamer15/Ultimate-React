@@ -11,7 +11,7 @@ function TipCalculator() {
     const [percentage1, setPercentage1] = useState(0);
     const [percentage2, setPercentage2] = useState(0);
 
-    function onReset() {
+    function handleReset() {
 
     }
 
@@ -35,7 +35,7 @@ function TipCalculator() {
 
             <Output bill={bill} tip1={percentage1} tip2={percentage2} />
 
-            <Reset onReset={onReset} />
+            <Reset handleReset={onReset} />
         </div>
     );
 }
