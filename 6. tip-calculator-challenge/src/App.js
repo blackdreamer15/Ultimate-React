@@ -71,6 +71,6 @@ function Output({ bill, tip1, tip2 }) {
 
 function Reset() {
     return (
-        
+        <button type="reset">Reset</button>
     );
 }
