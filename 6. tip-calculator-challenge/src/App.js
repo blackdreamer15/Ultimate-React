@@ -35,7 +35,7 @@ function TipCalculator() {
 
             <Output bill={bill} tip1={percentage1} tip2={percentage2} />
 
-            <Reset />
+            <Reset onReset={onReset} />
         </div>
     );
 }
