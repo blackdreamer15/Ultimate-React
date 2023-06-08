@@ -75,8 +75,8 @@ function Output({ bill, tip1, tip2 }) {
     );
 }
 
-function Reset() {
+function Reset({ onReset }) {
     return (
-        <button type="reset" onClick={ }>Reset</button>
+        <button type="reset" onClick={onReset}>Reset</button>
     );
 }
