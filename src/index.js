@@ -48,7 +48,9 @@ const pizzaData = [
 
 
 function App() {
-
+    <Header/>
+    <Menu/>
+    <Footer/>
 }
 
 function Header() {
