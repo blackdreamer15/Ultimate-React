@@ -14,3 +14,8 @@ body {
 h1 {
   margin-bottom: 12px;
 }
+
+.card {
+  width: 450px;
+  margin: 40px;
+}
