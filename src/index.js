@@ -50,23 +50,28 @@ const pizzaData = [
 function App() {
     return (
         <div>
-            <Header />
-            <Menu />
-            <Footer />
+            <h1>Hello React!</h1>
+            {/* <Header /> */}
+            {/* <Menu /> */}
+            {/* <Footer /> */}
         </div>
     );
 }
 
 function Header() {
-
+    return (
+        <h1>Fast React Co.</h1>
+    );
 }
 
 function Menu() {
-
+    return (null);
 }
 
 function Footer() {
-
+    return (
+        null
+    );
 }
 
 
