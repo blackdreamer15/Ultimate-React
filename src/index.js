@@ -2,11 +2,6 @@ import React from "react";
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-function App() {
-    return (
-        <h1>Hello React!</h1>
-    );
-}
 
 const pizzaData = [
     {
@@ -54,6 +49,27 @@ const pizzaData = [
 ];
 
 
+function App() {
+    return (
+        <h1>Hello React!</h1>
+    );
+}
+
+function Header() {
+    return (
+        null
+    );
+}
+
+function Menu() {
+    return (null);
+}
+
+function Footer() {
+    return (
+        null
+    );
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
