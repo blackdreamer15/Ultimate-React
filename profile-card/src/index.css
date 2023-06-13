@@ -30,3 +30,8 @@ h1 {
   width: 100%;
   display: block;
 }
+
+.data {
+  padding: 32px;
+  padding-top: 24px;
+}
