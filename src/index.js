@@ -51,7 +51,7 @@ const pizzaData = [
 
 function App() {
     return (
-        <div>
+        <div className="container">
             <Header />
             <Menu />
             <Footer />
@@ -61,7 +61,7 @@ function App() {
 
 function Header() {
     return (
-        null
+        <h1>Fast React Pizza Co.</h1>
     );
 }
 
