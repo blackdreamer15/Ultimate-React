@@ -51,7 +51,11 @@ const pizzaData = [
 
 function App() {
     return (
-        <h1>Hello React!</h1>
+        <div>
+            <Header />
+            <Menu />
+            <Footer />
+        </div>
     );
 }
 
