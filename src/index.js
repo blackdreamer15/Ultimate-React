@@ -61,9 +61,9 @@ function App() {
 
 function Header() {
     return (
-        <div className="header">
+        <header className="header">
             <h1>Fast React Pizza Co.</h1>
-        </div>
+        </header>
     );
 }
 
