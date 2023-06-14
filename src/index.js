@@ -77,7 +77,9 @@ function Menu() {
 
 function Footer() {
     return (
-        null
+        <footer className="footer">
+
+        </footer>
     );
 }
 
