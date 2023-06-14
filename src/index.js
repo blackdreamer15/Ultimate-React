@@ -68,7 +68,11 @@ function Header() {
 }
 
 function Menu() {
-    return (null);
+    return (
+        <main className="menu">
+
+        </main>
+    );
 }
 
 function Footer() {
