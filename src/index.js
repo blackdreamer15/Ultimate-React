@@ -74,15 +74,21 @@ function Menu() {
             <p>
                 Authentic Italian cuisine. 6 creative dishes to choose from. All from our stone oven, all organic, all delicious.
             </p>
-            
+
             {pizzaData.map((pizza) => (
-                <Pizza pizzaObj={pizza}/>
+                <Pizza pizzaObj={pizza} />
             ))}
         </main>
     );
 }
 
+function Pizza({ pizzaObj }) {
+    return (
+        <div className="pizzas">
 
+        </div>
+    );
+}
 
 function Footer() {
     return (
