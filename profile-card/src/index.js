@@ -68,7 +68,9 @@ const skills = [
 
 function App() {
     return (
-        
+        <div className='card'>
+
+        </div>
     );
 }
 
