@@ -80,7 +80,7 @@ function App() {
 
 function Avatar() {
     return (
-    
+        <img src="undefined - Imgur.png" alt="Imgur" className="avatar" />
     );
 }
 
