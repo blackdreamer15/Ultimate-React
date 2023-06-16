@@ -85,7 +85,14 @@ function Menu() {
 function Pizza({ pizzaObj }) {
     return (
         <div className="pizzas">
-
+            <div className="pizza">
+                <img src={pizzaObj.photoName} alt={pizzaObj.name} />
+                <div>
+                    <h3>{pizzaObj.name}</h3>
+                    <p>{pizzaObj.ingredients}</p>
+                    <p>{pizzaObj.price}</p>
+                </div>
+            </div>
         </div>
     );
 }
