@@ -71,6 +71,7 @@ function Menu() {
     return (
         <main className="menu">
             <h2>Our Menu</h2>
+
             {pizzaData.length > 0 ? (
                 <>
                     <p>
@@ -84,9 +85,8 @@ function Menu() {
                     </div>
                 </>
             ) : (
-
-                )}
-
+                <p>We are still working on our menu. Please come back later.</p>
+            )}
         </main>
     );
 }
