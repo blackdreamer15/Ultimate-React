@@ -78,11 +78,11 @@ function Menu() {
                         Authentic Italian cuisine. 6 creative dishes to choose from. All from our stone oven, all organic, all delicious.
                     </p>
 
-                    <div className="pizzas">
+                    <ul className="pizzas">
                         {pizzaData.map((pizza) => (
                             <Pizza pizzaObj={pizza} key={pizza.name} />
                         ))}
-                    </div>
+                    </ul>
                 </>
             ) : (
                 <p>We are still working on our menu. Please come back later.</p>
@@ -93,14 +93,14 @@ function Menu() {
 
 function Pizza({ pizzaObj }) {
     return (
-        <div className="pizza">
+        <li className="pizza">
             <img src={pizzaObj.photoName} alt={pizzaObj.name} />
             <div>
                 <h3>{pizzaObj.name}</h3>
                 <p>{pizzaObj.ingredients}</p>
                 <p>{pizzaObj.price}</p>
             </div>
-        </div>
+        </li>
     );
 }
 
