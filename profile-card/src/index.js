@@ -103,7 +103,11 @@ function SkillList() {
     );
 }
 
-
+function Skill() {
+    return (
+        
+    );
+}
 
 
 
