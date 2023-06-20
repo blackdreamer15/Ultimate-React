@@ -97,7 +97,7 @@ function SkillList() {
     return (
         <div className='skill-list'>
             {skill.map((skill) => (
-                <Skill skill={skill} level={level} color={color} />
+                <Skill skill={skill.skill} level={skill.level} color={skill.color} />
             ))}
         </div>
     );
