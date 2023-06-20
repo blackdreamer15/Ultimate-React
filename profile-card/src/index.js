@@ -103,9 +103,9 @@ function SkillList() {
     );
 }
 
-function Skill() {
+function Skill({ skill, level, color }) {
     return (
-        
+
     );
 }
 
