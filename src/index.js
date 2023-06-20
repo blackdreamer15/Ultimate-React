@@ -85,7 +85,9 @@ function Menu() {
                     </ul>
                 </>
             ) : (
-                <p>We are still working on our menu. Please come back later.</p>
+                <p>
+                    We are still working on our menu. Please come back later.
+                </p>
             )}
         </main>
     );
