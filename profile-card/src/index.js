@@ -84,7 +84,14 @@ function Avatar() {
     );
 }
 
-
+function Intro() {
+    return (
+        <div>
+            <h1>OTTO VAN OTTO</h1>
+            <p>Full-stack developer, Cybersecurity and Cloud lover, Embedded enthusiast and ML learner. When I am not sending binary digits, I love to tickle ivories and spend time playing arcarde games.</p>
+        </div>
+    );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
