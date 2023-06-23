@@ -6,6 +6,8 @@ function App() {
                 <div>2</div>
                 <div>3</div>
             </div>
+
+            <p className="message">lorem ipsum</p>
         </div>
     );
 }
