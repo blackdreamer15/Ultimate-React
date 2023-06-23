@@ -96,7 +96,7 @@ function Intro() {
 function SkillList() {
     return (
         <div className='skill-list'>
-            {skill.map((skill) => (
+            {skills.map((skill) => (
                 <Skill skill={skill.skill} level={skill.level} color={skill.color} />
             ))}
         </div>
