@@ -10,7 +10,12 @@ function App() {
             <p className="message">lorem ipsum</p>
 
             <div className="buttons">
-
+                <button>
+                    <span>Previous</span>
+                </button>
+                <button>
+                    <span>Next</span>
+                </button>
             </div>
         </div>
     );
