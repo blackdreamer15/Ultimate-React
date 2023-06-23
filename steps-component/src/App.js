@@ -10,10 +10,10 @@ function App() {
             <p className="message">lorem ipsum</p>
 
             <div className="buttons">
-                <button>
+                <button style={{ backgroundColor: '#7950f2', color: '#fff' }}>
                     <span>Previous</span>
                 </button>
-                <button>
+                <button style={{ backgroundColor: '#7950f2', color: '#fff' }}>
                     <span>Next</span>
                 </button>
             </div>
