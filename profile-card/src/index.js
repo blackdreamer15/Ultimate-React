@@ -105,7 +105,7 @@ function SkillList() {
 
 function Skill({ skill, level, color }) {
     return (
-        <div className='skill'>
+        <div className='skill' style={{ backgroundColor: color }}>
 
         </div>
     );
