@@ -8,6 +8,10 @@ function App() {
             </div>
 
             <p className="message">lorem ipsum</p>
+
+            <div className="buttons">
+
+            </div>
         </div>
     );
 }
