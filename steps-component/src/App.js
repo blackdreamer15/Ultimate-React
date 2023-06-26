@@ -15,7 +15,9 @@ function App() {
                 <div>3</div>
             </div>
 
-            <p className="message">lorem ipsum</p>
+            <p className="message">
+                {`Step ${step}: ${messages[step - 1]}`}
+            </p>
 
             <div className="buttons">
                 <button style={{ backgroundColor: '#7950f2', color: '#fff' }}>
