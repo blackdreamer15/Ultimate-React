@@ -122,6 +122,7 @@ function Footer() {
                     <p>
                         {new Date().toLocaleTimeString()}. We are open until {closeHour % 12}:00 PM. Come visit us or order online.
                     </p>
+                    <button className="btn">Order</button>
                 </>
             ) : (
                 <p>
