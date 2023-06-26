@@ -117,19 +117,20 @@ function Footer() {
 
     return (
         <footer className="footer">
-            {isOpen ? (
-                <>
+            <div className="order">
+                {isOpen ? (
+                    <>
+                        <p>
+                            {new Date().toLocaleTimeString()}. We are open until {closeHour % 12}:00 PM. Come visit us or order online.
+                        </p>
+                        <button className="btn">Order</button>
+                    </>
+                ) : (
                     <p>
-                        {new Date().toLocaleTimeString()}. We are open until {closeHour % 12}:00 PM. Come visit us or order online.
+                        We are happy to welcome you between {openHour}:00 AM and {closeHour % 12}:00 PM.
                     </p>
-                    <button className="btn">Order</button>
-                </>
-            ) : (
-                <p>
-                    We are happy to welcome you between {openHour}:00 AM and {closeHour % 12}:00 PM.
-                </p>
-            )
-            }
+                )}
+            </div>
         </footer >
     );
 }
