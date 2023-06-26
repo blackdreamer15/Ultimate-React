@@ -125,7 +125,7 @@ function Footer() {
                 </>
             ) : (
                 <p>
-                    We are happy to welcome you between {openHour}:00 AM and {closeHour}:00 PM.
+                    We are happy to welcome you between {openHour}:00 AM and {closeHour % 12}:00 PM.
                 </p>
             )
             }
