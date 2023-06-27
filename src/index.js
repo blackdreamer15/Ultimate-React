@@ -131,7 +131,7 @@ function Footer() {
 }
 
 function Order() {
-    return| (
+    return (
         <div className="order">
             <p>
                 {new Date().toLocaleTimeString()}. We are open until {closeHour % 12}:00 PM. Come visit us or order online.
