@@ -119,13 +119,13 @@ function Footer() {
         <footer className="footer">
 
             {isOpen ? (
-
-            ): (
-                    <p>
+                <Order />
+            ) : (
+                <p>
                     We are happy to welcome you between {openHour}:00 AM and {closeHour % 12}:00 PM.
-        </p>
-    )
-}
+                </p>
+            )
+            }
         </footer >
     );
 }
