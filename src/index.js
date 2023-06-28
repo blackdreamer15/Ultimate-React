@@ -118,7 +118,7 @@ function Footer() {
     return (
         <footer className="footer">
             {isOpen ? (
-                <Order />
+                <Order closeHour={closeHour} />
             ) : (
                 <p>
                     We are happy to welcome you between {openHour}:00 AM and {closeHour % 12}:00 PM.
