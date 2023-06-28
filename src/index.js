@@ -128,7 +128,7 @@ function Footer() {
     );
 }
 
-function Order() {
+function Order({ closeHour }) {
     return (
         <div className="order">
             <p>
