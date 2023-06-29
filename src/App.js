@@ -21,6 +21,18 @@ const initialFriends = [
   },
 ];
 
+
+function Button({ showAddFriend, onShowAddFriend, children }) {
+  return (
+    <button className="button"
+      onClick={() => onShowAddFriend(
+        (showAddFriend) => !showAddFriend)
+      }
+    >{children}</button>
+  );
+}
+
+
 export default function App() {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
@@ -90,19 +102,6 @@ function Friend({ name, image, balance }) {
     </li>
   );
 }
-
-
-
-function Button({ showAddFriend, onShowAddFriend, children }) {
-  return (
-    <button className="button"
-      onClick={() => onShowAddFriend(
-        (showAddFriend) => !showAddFriend)
-      }
-    >{children}</button>
-  );
-}
-
 
 
 function AddFriendForm({ name, onSetName, image, onSetImage }) {
