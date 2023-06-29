@@ -24,6 +24,7 @@ const initialFriends = [
 export default function App() {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
+  const [showAddFriend, setShowAddFriend] = useState(false);
 
   return (
     <div className="app">
@@ -94,7 +95,6 @@ function Button({ children }) {
 
 
 function AddFriendForm({ name, onSetName, image, onSetImage }) {
-  const [showAddFriend, setShowAddFriend] = useState(false);
 
   return (
     <form className="form-add-friend">
