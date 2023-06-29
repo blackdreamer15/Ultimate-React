@@ -31,7 +31,9 @@ export default function App() {
       <div className="sidebar">
         <FriendList />
 
-        <AddFriendForm name={name} onSetName={setName} image={image} onSetImage={setImage} />
+        {showAddFriend &&
+          <AddFriendForm name={name} onSetName={setName} image={image} onSetImage={setImage} />
+        }
 
         <Button>Add Friend</Button>
       </div>
