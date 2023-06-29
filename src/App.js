@@ -95,7 +95,11 @@ function Friend({ name, image, balance }) {
 
 function Button({ showAddFriend, onShowAddFriend, children }) {
   return (
-    <button className="button" onClick={ }>{children}</button>
+    <button className="button"
+      onClick={() => onShowAddFriend(
+        (showAddFriend) => !showAddFriend)
+      }
+    >{children}</button>
   );
 }
 
