@@ -7,6 +7,14 @@ const messages = [
 function App() {
     let step = 1;
 
+    function handlePrevious() {
+
+    }
+
+    function handleNext() {
+
+    }
+
     return (
         <div className="steps">
             <div className="numbers">
