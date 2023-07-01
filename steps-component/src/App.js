@@ -8,6 +8,7 @@ const messages = [
 
 function App() {
     const [step, setStep] = useState(1);
+    const [isOpen, setIsOpen] = useState(true);
 
     function handlePrevious() {
         if (step > 1) setStep(step - 1);
@@ -20,6 +21,7 @@ function App() {
     return (
         <div>
             <button className="close">&times;</button>
+
             <div className="steps">
                 <div className="numbers">
                     <div className={step >= 1 ? "active" : ""}>1</div>
