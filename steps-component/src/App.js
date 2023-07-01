@@ -20,9 +20,13 @@ function App() {
 
     return (
         <div>
-            <button className="close">&times;</button>
+            <button
+                className="close"
+                onClick={() => setIsOpen(!isOpen)}
+            >&times;</button>
 
-            {isOpen &&
+            {
+                isOpen &&
                 <div className="steps">
                     <div className="numbers">
                         <div className={step >= 1 ? "active" : ""}>1</div>
@@ -44,7 +48,7 @@ function App() {
                     </div>
                 </div >
             }
-        </div>
+        </div >
 
     );
 }
