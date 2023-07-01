@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 const messages = [
     "Learn React ⚛️",
     "Apply for jobs 💼",
