@@ -26,7 +26,7 @@ function App() {
         <>
             <button
                 className="close"
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen(open => !open)}
             >&times;</button>
 
             {
