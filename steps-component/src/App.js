@@ -19,7 +19,7 @@ function App() {
     }
 
     return (
-        <div>
+        <>
             <button
                 className="close"
                 onClick={() => setIsOpen(!isOpen)}
@@ -48,7 +48,7 @@ function App() {
                     </div>
                 </div >
             }
-        </div >
+        </>
 
     );
 }
