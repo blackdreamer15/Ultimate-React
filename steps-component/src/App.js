@@ -19,6 +19,7 @@ function App() {
 
     return (
         <div>
+            <button className="close">&times;</button>
             <div className="steps">
                 <div className="numbers">
                     <div className={step >= 1 ? "active" : ""}>1</div>
