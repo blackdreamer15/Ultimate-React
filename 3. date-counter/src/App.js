@@ -15,6 +15,10 @@ function Steps() {
 
     }
 
+    function handleStepDecrease() {
+
+    }
+
     return (
         <div>
             <button>&minus;</button>
