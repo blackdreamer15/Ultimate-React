@@ -21,9 +21,9 @@ function Steps() {
 
     return (
         <div>
-            <button>&minus;</button>
+            <button onClick={handleStepDecrease}>&minus;</button>
             <p>Step: {step}</p>
-            <button>&plus;</button>
+            <button onClick={handleStepIncrease}>&plus;</button>
         </div>
     )
 }
