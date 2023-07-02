@@ -11,6 +11,10 @@ function App() {
 function Steps() {
     const [step, setStep] = useState(0);
 
+    function handleStepIncrease() {
+
+    }
+
     return (
         <div>
             <button>&minus;</button>
