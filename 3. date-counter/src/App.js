@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function App() {
     return (
         <div>
@@ -7,6 +9,8 @@ function App() {
 }
 
 function Steps() {
+    const [step, setStep] = useState(0);
+
     return (
         <div>
             <button>&minus;</button>
