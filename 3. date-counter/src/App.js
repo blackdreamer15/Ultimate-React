@@ -32,6 +32,10 @@ function Steps() {
 function Counter() {
     const [count, setCount] = useState(0);
 
+    function handleCountIncrement() {
+
+    }
+
     return (
         <div>
             <button>&minus;</button>
