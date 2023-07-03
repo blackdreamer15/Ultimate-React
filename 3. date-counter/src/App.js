@@ -14,7 +14,7 @@ function Steps() {
     }
 
     function handleStepDecrease() {
-        setStep(step => step + 1);
+        setStep(step => step - 1);
     }
 
     return (
