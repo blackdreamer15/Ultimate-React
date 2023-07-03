@@ -26,4 +26,8 @@ function Steps() {
     )
 }
 
+function Counter() {
+
+}
+
 export default App;
