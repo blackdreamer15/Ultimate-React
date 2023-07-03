@@ -23,8 +23,8 @@ function Counter() {
     }
 
 
-    function handleCountIncrement() {
-
+    function handleCountIncrement(step) {
+        setCount(count => count + step);
     }
 
     function handleCountDecrement() {
