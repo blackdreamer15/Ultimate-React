@@ -34,14 +34,15 @@ function Counter() {
     return (
         <main>
             <section>
-                <button>&minus;</button>
-                <span>Count: {count}</span>
-                <button>&plus;</button>
-            </section>
-            <section>
                 <button onClick={handleStepDecrement}>&minus;</button>
                 <span>Step: {step}</span>
                 <button onClick={handleStepIncrement}>&plus;</button>
+            </section>
+
+            <section>
+                <button>&minus;</button>
+                <span>Count: {count}</span>
+                <button>&plus;</button>
             </section>
         </main>
     )
