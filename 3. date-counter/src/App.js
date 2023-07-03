@@ -12,19 +12,19 @@ function App() {
 function Steps() {
     const [step, setStep] = useState(0);
 
-    function handleStepIncrease() {
+    function handleStepIncrement() {
         setStep(step => step + 1);
     }
 
-    function handleStepDecrease() {
+    function handleStepDecrement() {
         setStep(step => step - 1);
     }
 
     return (
         <div>
-            <button onClick={handleStepDecrease}>&minus;</button>
+            <button onClick={handleStepDecrement}>&minus;</button>
             <span>Step: {step}</span>
-            <button onClick={handleStepIncrease}>&plus;</button>
+            <button onClick={handleStepIncrement}>&plus;</button>
         </div>
     )
 }
