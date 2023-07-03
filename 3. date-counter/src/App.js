@@ -32,18 +32,18 @@ function Counter() {
     }
 
     return (
-        <>
-            <div>
+        <main>
+            <section>
                 <button>&minus;</button>
                 <span>Count: {count}</span>
                 <button>&plus;</button>
-            </div>
-            <div>
+            </section>
+            <section>
                 <button onClick={handleStepDecrement}>&minus;</button>
                 <span>Step: {step}</span>
                 <button onClick={handleStepIncrement}>&plus;</button>
-            </div>
-        </>
+            </section>
+        </main>
     )
 }
 
