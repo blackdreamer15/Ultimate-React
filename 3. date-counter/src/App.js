@@ -12,7 +12,7 @@ function Steps() {
     const [step, setStep] = useState(0);
 
     function handleStepIncrease() {
-
+        setStep(step => step + 1);
     }
 
     function handleStepDecrease() {
