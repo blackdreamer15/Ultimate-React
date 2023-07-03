@@ -4,7 +4,7 @@ function App() {
     return (
         <div>
             < Steps />
-            <Counter />
+            < Counter />
         </div>
     )
 }
@@ -30,7 +30,13 @@ function Steps() {
 }
 
 function Counter() {
-
+    return (
+        <div>
+            <button>&minus;</button>
+            <span>Count: {count}</span>
+            <button>&plus;</button>
+        </div>
+    )
 }
 
 export default App;
