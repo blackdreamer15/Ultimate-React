@@ -27,8 +27,8 @@ function Counter() {
         setCount(count => count + step);
     }
 
-    function handleCountDecrement() {
-
+    function handleCountDecrement(step) {
+        setCount(count => count - step);
     }
 
     return (
