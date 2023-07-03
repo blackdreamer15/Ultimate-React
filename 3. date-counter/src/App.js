@@ -36,6 +36,10 @@ function Counter() {
 
     }
 
+    function handleCountDecrement() {
+
+    }
+
     return (
         <div>
             <button>&minus;</button>
