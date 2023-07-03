@@ -2,7 +2,10 @@ import { useState } from "react";
 
 function App() {
     return (
-        < Steps />
+        <div>
+            < Steps />
+            <Counter />
+        </div>
     )
 }
 
