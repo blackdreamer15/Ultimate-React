@@ -51,8 +51,11 @@ function Counter() {
 
             <p>
                 {count > 0 ?
-                    `${count} days from today` : "Today"
-                } is: {date.toDateString()}
+                    `${count} days from today is` : (
+                        (count === 0) ?
+                            "Today is" : `${count} days ago was`
+                    )
+                }: {date.toDateString()}
             </p>
         </main>
     )
