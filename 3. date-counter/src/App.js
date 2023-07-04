@@ -12,7 +12,7 @@ function App() {
 function Counter() {
     const [step, setStep] = useState(0);
     const [count, setCount] = useState(0);
-
+    const date = new Date();
 
     function handleStepIncrement() {
         setStep(step => step + 1);
@@ -44,6 +44,8 @@ function Counter() {
                 <span>Count: {count}</span>
                 <button onClick={handleCountIncrement}>&plus;</button>
             </section>
+
+
         </main>
     )
 }
