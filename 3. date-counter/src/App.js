@@ -12,7 +12,7 @@ function App() {
 function Counter() {
     const [step, setStep] = useState(0);
     const [count, setCount] = useState(0);
-    const date = new Date();
+
 
     function handleStepIncrement() {
         setStep(step => step + 1);
@@ -22,7 +22,6 @@ function Counter() {
         setStep(step => step - 1);
     }
 
-
     function handleCountIncrement() {
         setCount(count => count + step);
     }
@@ -30,6 +29,11 @@ function Counter() {
     function handleCountDecrement() {
         setCount(count => count - step);
     }
+
+
+    let date = new Date();
+    date.setDate(date.getDate() + count);
+
 
     return (
         <main>
