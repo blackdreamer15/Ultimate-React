@@ -40,9 +40,9 @@ function Counter() {
             </section>
 
             <section>
-                <button>&minus;</button>
+                <button onClick={handleCountDecrement(count)}>&minus;</button>
                 <span>Count: {count}</span>
-                <button>&plus;</button>
+                <button onClick={handleCountIncrement(count)}>&plus;</button>
             </section>
         </main>
     )
