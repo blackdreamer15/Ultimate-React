@@ -23,11 +23,11 @@ function Counter() {
     }
 
 
-    function handleCountIncrement(step) {
+    function handleCountIncrement() {
         setCount(count => count + step);
     }
 
-    function handleCountDecrement(step) {
+    function handleCountDecrement() {
         setCount(count => count - step);
     }
 
@@ -40,9 +40,9 @@ function Counter() {
             </section>
 
             <section>
-                <button onClick={handleCountDecrement(count)}>&minus;</button>
+                <button onClick={handleCountDecrement}>&minus;</button>
                 <span>Count: {count}</span>
-                <button onClick={handleCountIncrement(count)}>&plus;</button>
+                <button onClick={handleCountIncrement}>&plus;</button>
             </section>
         </main>
     )
