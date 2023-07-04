@@ -53,7 +53,7 @@ function Counter() {
                 {count > 0 ?
                     `${count} days from today is` : (
                         (count === 0) ?
-                            "Today is" : `${count} days ago was`
+                            "Today is" : `${Math.abs(count)} days ago was`
                     )
                 }: {date.toDateString()}
             </p>
