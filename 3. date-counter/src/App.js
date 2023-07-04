@@ -45,7 +45,11 @@ function Counter() {
                 <button onClick={handleCountIncrement}>&plus;</button>
             </section>
 
-
+            <p>
+                {count > 0 ?
+                    `${count} days from today` : "Today"
+                } is: {date.toDateString()}
+            </p>
         </main>
     )
 }
