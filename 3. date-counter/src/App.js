@@ -2,9 +2,9 @@ import { useState } from "react";
 
 function App() {
     return (
-        <div>
+        <main>
             < Counter />
-        </div>
+        </main>
     )
 }
 
@@ -36,7 +36,7 @@ function Counter() {
 
 
     return (
-        <main>
+        <section>
             <section>
                 <button onClick={handleStepDecrement}>&minus;</button>
                 <span>Step: {step}</span>
@@ -57,7 +57,7 @@ function Counter() {
                     )
                 }: {date.toDateString()}
             </p>
-        </main>
+        </section>
     )
 }
 
