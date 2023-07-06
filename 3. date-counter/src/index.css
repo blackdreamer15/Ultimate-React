@@ -36,3 +36,8 @@ button {
   width: 3rem;
   height: 3rem;
 }
+
+span,
+p {
+  font-size: 2rem;
+}
