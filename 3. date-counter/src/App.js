@@ -22,9 +22,9 @@ function Stepper() {
     return (
         <>
             <section>
-                <button onClick={handleStepDecrement}>&minus;</button>
+                <button onClick={handleStepDecrement}>-</button>
                 <span>Step: {step}</span>
-                <button onClick={handleStepIncrement}>&plus;</button>
+                <button onClick={handleStepIncrement}>+</button>
             </section>
 
             < Counter step={step} />
@@ -49,9 +49,9 @@ function Counter({ step }) {
     return (
         <>
             <section>
-                <button onClick={handleCountDecrement}>&minus;</button>
+                <button onClick={handleCountDecrement}>-</button>
                 <span>Count: {count}</span>
-                <button onClick={handleCountIncrement}>&plus;</button>
+                <button onClick={handleCountIncrement}>+</button>
             </section>
 
             <p>
