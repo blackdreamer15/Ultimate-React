@@ -129,3 +129,10 @@ input[type="checkbox"] {
   padding: 0.8rem;
   transform: translateY(2px);
 }
+
+.stats {
+  background-color: #76c7ad;
+  text-align: center;
+  font-weight: 700;
+  padding: 3.2rem 0;
+}
