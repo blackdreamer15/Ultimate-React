@@ -108,3 +108,9 @@ input {
   justify-content: center;
   align-content: start;
 }
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
