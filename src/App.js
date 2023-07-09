@@ -1,8 +1,14 @@
 function App() {
   return (
     <main className="app">
-      <h1>🏝️ Far Away 🧳</h1>
+
     </main>
+  );
+}
+
+function Logo() {
+  return (
+    <h1>🏝️ Far Away 🧳</h1>
   );
 }
 
