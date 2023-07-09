@@ -1,8 +1,8 @@
 function App() {
   return (
     <>
+      <Logo />
       <main className="app">
-        <Logo />
       </main>
       <Stats />
     </>
