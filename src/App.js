@@ -1,8 +1,11 @@
 function App() {
   return (
-    <main className="app">
-      <Logo />
-    </main>
+
+      <main className="app">
+        <Logo />
+      </main>
+      <Stats />
+
   );
 }
 
