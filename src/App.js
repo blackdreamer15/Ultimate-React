@@ -15,6 +15,12 @@ function Logo() {
   );
 }
 
+function PackingList() {
+  return (
+    
+  );
+}
+
 function Stats() {
   return (
     <footer className="stats">
