@@ -2,8 +2,11 @@ function App() {
   return (
     <>
       <Logo />
+
       <main className="app">
+        <PackingList />
       </main>
+
       <Stats />
     </>
   );
