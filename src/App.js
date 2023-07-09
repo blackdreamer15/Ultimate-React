@@ -1,6 +1,8 @@
 function App() {
   return (
-    <main className="app"></main>
+    <main className="app">
+      <h1>🏝️ Far Away 🧳</h1>
+    </main>
   );
 }
 
