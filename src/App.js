@@ -1,7 +1,7 @@
 function App() {
   return (
     <main className="app">
-
+      <Logo />
     </main>
   );
 }
