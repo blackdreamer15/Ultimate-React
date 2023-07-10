@@ -55,7 +55,9 @@ function PackingList() {
 }
 
 function Item() {
-
+  return (
+    <li></li>
+  );
 }
 
 function Stats() {
