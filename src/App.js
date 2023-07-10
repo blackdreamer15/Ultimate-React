@@ -1,15 +1,15 @@
 function App() {
   return (
-    <>
+    <div className="app">
       <Logo />
 
-      <main className="app">
+      <main>
         <Form />
         <PackingList />
       </main>
 
       <Stats />
-    </>
+    </div>
   );
 }
 
@@ -25,13 +25,16 @@ function Form() {
   return (
     <div className="add-form">
       <h3>What do you need for your trip🤩🛄?</h3>
+      <input type="text" />
     </div>
   );
 }
 
 function PackingList() {
   return (
-    <div className="list"></div>
+    <div className="list">
+      Hello
+    </div>
   );
 }
 
