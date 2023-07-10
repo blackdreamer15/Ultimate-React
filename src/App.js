@@ -4,6 +4,7 @@ function App() {
       <Logo />
 
       <main className="app">
+        <Form />
         <PackingList />
       </main>
 
@@ -17,6 +18,14 @@ function Logo() {
     <header>
       <h1>🏝️ Far Away 🧳</h1>
     </header>
+  );
+}
+
+function Form() {
+  return (
+    <div className="add-form">
+
+    </div>
   );
 }
 
