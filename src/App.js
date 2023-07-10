@@ -47,7 +47,9 @@ function Form() {
 function PackingList() {
   return (
     <div className="list">
-      Hello
+      {initialItems.map(item => (
+        <Item item={item} />
+      ))}
     </div>
   );
 }
