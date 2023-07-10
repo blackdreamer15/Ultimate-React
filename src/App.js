@@ -54,6 +54,10 @@ function PackingList() {
   );
 }
 
+function Item() {
+
+}
+
 function Stats() {
   return (
     <footer className="stats">
