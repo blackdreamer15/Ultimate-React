@@ -46,11 +46,13 @@ function Form() {
 
 function PackingList() {
   return (
-    <ul className="list">
-      {initialItems.map(item => (
-        <Item item={item} key={item.id} />
-      ))}
-    </ul>
+    <div className="list">
+      <ul>
+        {initialItems.map((item) => (
+          <Item item={item} key={item.id} />
+        ))}
+      </ul>
+    </div>
   );
 }
 
