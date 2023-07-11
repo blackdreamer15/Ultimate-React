@@ -56,7 +56,12 @@ function PackingList() {
 
 function Item({ item }) {
   return (
-    <li></li>
+    <li>
+      <span>
+        {item.quantity} {item.description}
+      </span>
+      <button>❌</button>
+    </li>
   );
 }
 
