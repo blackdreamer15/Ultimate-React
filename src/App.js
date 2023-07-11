@@ -9,10 +9,10 @@ function App() {
     <div className="app">
       <Logo />
 
-      <main>
-        <Form />
-        <PackingList />
-      </main>
+      {/* <main> */}
+      <Form />
+      <PackingList />
+      {/* </main> */}
 
       <Stats />
     </div>
@@ -21,9 +21,9 @@ function App() {
 
 function Logo() {
   return (
-    <header>
-      <h1>🏝️ Far Away 🧳</h1>
-    </header>
+    // <header>
+    <h1>🏝️ Far Away 🧳</h1>
+    // </header>
   );
 }
 
