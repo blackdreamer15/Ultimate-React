@@ -54,7 +54,7 @@ function PackingList() {
   );
 }
 
-function Item() {
+function Item({ item }) {
   return (
     <li></li>
   );
