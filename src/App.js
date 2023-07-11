@@ -29,7 +29,7 @@ function Logo() {
 
 function Form() {
   return (
-    <div className="add-form">
+    <form className="add-form">
       <h3>
         What do you need for your trip🤩?
       </h3>
@@ -40,7 +40,7 @@ function Form() {
       </select>
       <input type="text" placeholder="Item..." />
       <button className="button">Add</button>
-    </div>
+    </form>
   );
 }
 
