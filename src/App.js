@@ -33,7 +33,7 @@ function Form() {
   const [description, setDescription] = useState("");
 
   function handleSubmit(e) {
-
+    e.preventDefault();
   }
 
   return (
