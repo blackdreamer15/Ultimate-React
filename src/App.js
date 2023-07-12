@@ -31,7 +31,7 @@ function Logo() {
 
 function Form() {
   const [description, setDescription] = useState("");
-  const [optionVal, setOptionVal] = useState("1");
+  const [optionVal, setOptionVal] = useState(1);
 
   function handleSubmit(e) {
     e.preventDefault();
