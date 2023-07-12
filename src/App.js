@@ -44,7 +44,7 @@ function Form() {
       </h3>
 
       <select value={optionVal} onChange={(e) => (
-        setOptionVal(e.target.value)
+        setOptionVal(Number(e.target.value))
       )}>
         {Array.from({ length: 20 }, (_, curr) => (curr + 1)).map((el) => (
           <option value={el} key={el}>
