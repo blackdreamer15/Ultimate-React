@@ -32,8 +32,12 @@ function Logo() {
 function Form() {
   const [description, setDescription] = useState("");
 
+  function handleSubmit() {
+
+  }
+
   return (
-    <form className="add-form">
+    <form className="add-form" onSubmit={handleSubmit}>
       <h3>
         What do you need for your trip🤩?
       </h3>
