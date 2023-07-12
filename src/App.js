@@ -43,7 +43,7 @@ function Form() {
         What do you need for your trip🤩?
       </h3>
 
-      <select>
+      <select value={optionVal}>
         {Array.from({ length: 20 }, (_, curr) => (curr + 1)).map((el) => (
           <option value={el} key={el}>
             {el}
