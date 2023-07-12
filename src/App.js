@@ -35,7 +35,7 @@ function Form() {
       </h3>
       <select>
         {Array.from({ length: 20 }, (_, curr) => (curr + 1)).map((el) => (
-          <option value={el}>{el}</option>
+          <option value={el} key={el}>{el}</option>
         ))}
       </select>
       <input type="text" placeholder="Item..." />
