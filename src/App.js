@@ -32,7 +32,7 @@ function Logo() {
 function Form() {
   const [description, setDescription] = useState("");
 
-  function handleSubmit() {
+  function handleSubmit(e) {
 
   }
 
