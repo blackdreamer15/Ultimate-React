@@ -44,7 +44,7 @@ function Form() {
           </option>
         ))}
       </select>
-      <input type="text" placeholder="Item..." />
+      <input type="text" placeholder="Item..." value={ } />
       <button className="button">Add</button>
     </form>
   );
