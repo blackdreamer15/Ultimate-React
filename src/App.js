@@ -43,7 +43,9 @@ function Form() {
         What do you need for your trip🤩?
       </h3>
 
-      <select value={optionVal}>
+      <select value={optionVal} onChange={(e) => (
+        setOptionVal(e.target.value)
+      )}>
         {Array.from({ length: 20 }, (_, curr) => (curr + 1)).map((el) => (
           <option value={el} key={el}>
             {el}
@@ -58,7 +60,7 @@ function Form() {
         }} />
 
       <button className="button">Add</button>
-    </form>
+    </form >
   );
 }
 
