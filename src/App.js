@@ -38,6 +38,15 @@ function Form() {
 
     if (!description) return;
 
+    const newItem = {
+      id,
+      description,
+      quantity,
+      packed
+    }
+
+    console.log(newItem);
+
     setDescription("");
     setselectVal(1);
   }
