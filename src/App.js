@@ -35,6 +35,10 @@ function Form() {
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    if (!description) return;
+
+
   }
 
   return (
