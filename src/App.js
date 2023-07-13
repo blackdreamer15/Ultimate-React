@@ -42,7 +42,7 @@ function Form() {
       id: Date.now(),
       description: description,
       quantity: selectVal,
-      packed
+      packed: false
     }
 
     console.log(newItem);
