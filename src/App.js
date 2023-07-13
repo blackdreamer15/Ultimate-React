@@ -39,7 +39,7 @@ function Form() {
     if (!description) return;
 
     const newItem = {
-      id,
+      id: Date.now(),
       description,
       quantity,
       packed
