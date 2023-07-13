@@ -31,7 +31,7 @@ function Logo() {
 
 function Form() {
   const [description, setDescription] = useState("");
-  const [selectVal, setselectVal] = useState(1);
+  const [quantity, setquantity] = useState(1);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -41,14 +41,14 @@ function Form() {
     const newItem = {
       id: Date.now(),
       description: description,
-      quantity: selectVal,
+      quantity: quantity,
       packed: false
     }
 
     console.log(newItem);
 
     setDescription("");
-    setselectVal(1);
+    setquantity(1);
   }
 
   return (
@@ -57,8 +57,8 @@ function Form() {
         What do you need for your trip🤩?
       </h3>
 
-      <select value={selectVal} onChange={(e) => (
-        setselectVal(Number(e.target.value))
+      <select value={quantity} onChange={(e) => (
+        setquantity(Number(e.target.value))
       )}>
         {Array.from({ length: 20 }, (_, curr) => (curr + 1)).map((el) => (
           <option value={el} key={el}>
