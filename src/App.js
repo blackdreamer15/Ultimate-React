@@ -31,7 +31,7 @@ function Logo() {
 
 function Form() {
   const [description, setDescription] = useState("");
-  const [optionVal, setOptionVal] = useState(1);
+  const [selectVal, setselectVal] = useState(1);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -39,7 +39,7 @@ function Form() {
     if (!description) return;
 
     setDescription("");
-    setOptionVal(1);
+    setselectVal(1);
   }
 
   return (
@@ -48,8 +48,8 @@ function Form() {
         What do you need for your trip🤩?
       </h3>
 
-      <select value={optionVal} onChange={(e) => (
-        setOptionVal(Number(e.target.value))
+      <select value={selectVal} onChange={(e) => (
+        setselectVal(Number(e.target.value))
       )}>
         {Array.from({ length: 20 }, (_, curr) => (curr + 1)).map((el) => (
           <option value={el} key={el}>
