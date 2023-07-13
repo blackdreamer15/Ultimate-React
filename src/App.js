@@ -38,7 +38,8 @@ function Form() {
 
     if (!description) return;
 
-
+    setDescription("");
+    setOptionVal(1);
   }
 
   return (
