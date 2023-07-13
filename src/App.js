@@ -40,8 +40,8 @@ function Form() {
 
     const newItem = {
       id: Date.now(),
-      description,
-      quantity,
+      description: description,
+      quantity: selectVal,
       packed
     }
 
