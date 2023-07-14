@@ -45,7 +45,6 @@ function Form() {
       packed: false
     }
 
-    console.log(newItem);
 
     setDescription("");
     setquantity(1);
