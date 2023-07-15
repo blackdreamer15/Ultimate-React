@@ -41,5 +41,7 @@ const questions = [
 ];
 
 function FlashCards() {
-  return <div>TODO</div>;
+  return (
+    <main className="flashcards"></main>
+  );
 }
