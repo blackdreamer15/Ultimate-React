@@ -42,6 +42,10 @@ const questions = [
 
 function FlashCards() {
   return (
-    <main className="flashcards"></main>
+    <main className="flashcards">
+      {questions.map((card) => (
+        <Card card={card} />
+      ))}
+    </main>
   );
 }
