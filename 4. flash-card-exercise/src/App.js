@@ -49,3 +49,7 @@ function FlashCards() {
     </main>
   );
 }
+
+function Card() {
+  return ();
+}
