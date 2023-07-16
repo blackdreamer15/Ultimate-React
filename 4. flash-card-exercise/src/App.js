@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function App() {
   return (
     <div className="App">
@@ -51,6 +53,8 @@ function FlashCards() {
 }
 
 function Card({ card }) {
+  const [content, setContent] = useState(card.question);
+
   return (
     <div>
       <span>{card.question}</span>
