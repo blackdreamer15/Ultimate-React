@@ -52,7 +52,7 @@ function FlashCards() {
   );
 }
 
-function Card({ question }) {
+function Card({ question, answer }) {
   const [isSelected, setIsSelected] = useState(false);
 
   function handleClick() {
@@ -67,7 +67,7 @@ function Card({ question }) {
       className={isSelected ? "selected" : ""}>
       <span>
         {isSelected ?
-          `${question.answer}` : `${question.question}`}
+          `${question}` : `${answer}`}
       </span>
     </div>
   );
