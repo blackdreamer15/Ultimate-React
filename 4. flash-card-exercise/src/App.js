@@ -60,7 +60,7 @@ function Card({ card }) {
   function handleClick() {
     isBackOfCard = !isBackOfCard;
 
-    if (isBackOfCard) setContent(card.answer);
+    if (isBackOfCard === true) setContent(card.answer);
     else setContent(card.question);
   }
 
