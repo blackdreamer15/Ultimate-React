@@ -51,5 +51,9 @@ function FlashCards() {
 }
 
 function Card({ card }) {
-  return ();
+  return (
+    <div>
+      <span>{card.question}</span>
+    </div>
+  );
 }
