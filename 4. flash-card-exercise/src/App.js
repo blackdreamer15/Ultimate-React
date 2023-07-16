@@ -55,6 +55,8 @@ function FlashCards() {
 function Card({ card }) {
   const [content, setContent] = useState(card.question);
 
+  let isClicked = false;
+
   function handleClick() {
 
   }
