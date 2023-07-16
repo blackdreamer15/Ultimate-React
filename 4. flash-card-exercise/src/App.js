@@ -55,6 +55,10 @@ function FlashCards() {
 function Card({ card }) {
   const [content, setContent] = useState(card.question);
 
+  function handleClick() {
+
+  }
+
   return (
     <div onClick={handleClick}>
       <span>{content}</span>
