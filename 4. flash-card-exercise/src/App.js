@@ -67,7 +67,7 @@ function Card({ question, answer }) {
       className={isSelected ? "selected" : ""}>
       <span>
         {isSelected ?
-          `${question}` : `${answer}`}
+          `${answer}` : `${question}`}
       </span>
     </div>
   );
