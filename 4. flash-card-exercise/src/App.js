@@ -45,14 +45,14 @@ const questions = [
 function FlashCards() {
   return (
     <main className="flashcards">
-      {questions.map((card) => (
-        <Card card={card} key={card.id} />
+      {questions.map((question) => (
+        <Card question={question.question} answer={question.answer} key={question.id} />
       ))}
     </main>
   );
 }
 
-function Card({ card }) {
+function Card({ question }) {
   const [isSelected, setIsSelected] = useState(false);
 
   function handleClick() {
@@ -67,7 +67,7 @@ function Card({ card }) {
       className={isSelected ? "selected" : ""}>
       <span>
         {isSelected ?
-          `${card.answer}` : `${card.question}`}
+          `${question.answer}` : `${question.question}`}
       </span>
     </div>
   );
