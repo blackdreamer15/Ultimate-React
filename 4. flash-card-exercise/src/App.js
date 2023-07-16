@@ -46,7 +46,7 @@ function FlashCards() {
   return (
     <main className="flashcards">
       {questions.map((card) => (
-        <Card card={card} />
+        <Card card={card} key={card.id} />
       ))}
     </main>
   );
