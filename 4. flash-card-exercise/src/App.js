@@ -53,20 +53,20 @@ function FlashCards() {
 }
 
 function Card({ card }) {
-  const [isContent, setIsContent] = useState(false);
+  const [isSelected, setIsSelected] = useState(false);
 
   function handleClick() {
-    if (isContent)
-      setIsContent((isContent) => (isContent = false))
+    if (isSelected)
+      setIsSelected((isSelected) => (isSelected = false))
     else
-      setIsContent((isContent) => (isContent = true))
+      setIsSelected((isSelected) => (isSelected = true))
   }
 
   return (
     <div onClick={handleClick}
-      className={isContent ? "selected" : ""}>
+      className={isSelected ? "selected" : ""}>
       <span>
-        {isContent ?
+        {isSelected ?
           `${card.answer}` : `${card.question}`}
       </span>
     </div>
