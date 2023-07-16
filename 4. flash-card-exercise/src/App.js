@@ -76,7 +76,8 @@ function Card({ card }) {
   }
 
   return (
-    <div onClick={handleClick}>
+    <div onClick={handleClick}
+      className={content ? "selected" : ""}>
       <span>
         {content ?
           `${card.answer}` : `${card.question}`}
