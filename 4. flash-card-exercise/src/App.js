@@ -53,22 +53,9 @@ function FlashCards() {
 }
 
 function Card({ card }) {
-  // const [content, setContent] = useState(card.question);
   const [content, setContent] = useState(false);
 
-  // let isBackOfCard = false;
-
   function handleClick() {
-    // isBackOfCard = !isBackOfCard;
-
-    // if (isBackOfCard === true) {
-    //   setContent(card.answer);
-    //   console.log(isBackOfCard);
-    // } else {
-    //   setContent(card.question);
-    //   console.log(isBackOfCard);
-    // }
-
     if (content)
       setContent((content) => (content = false))
     else
