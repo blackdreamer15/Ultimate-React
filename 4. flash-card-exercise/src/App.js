@@ -50,6 +50,6 @@ function FlashCards() {
   );
 }
 
-function Card() {
+function Card({ card }) {
   return ();
 }
