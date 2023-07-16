@@ -56,8 +56,8 @@ function Card({ card }) {
   const [content, setContent] = useState(card.question);
 
   return (
-    <div>
-      <span>{card.question}</span>
+    <div onClick={handleClick}>
+      <span>{content}</span>
     </div>
   );
 }
