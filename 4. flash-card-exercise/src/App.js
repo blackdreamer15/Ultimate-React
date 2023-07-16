@@ -58,7 +58,10 @@ function Card({ card }) {
   let isBackOfCard = false;
 
   function handleClick() {
+    isBackOfCard = !isBackOfCard;
 
+    if (isBackOfCard) setContent(card.answer);
+    else setContent(card.question);
   }
 
   return (
