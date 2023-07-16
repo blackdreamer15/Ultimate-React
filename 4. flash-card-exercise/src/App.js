@@ -55,7 +55,7 @@ function FlashCards() {
 function Card({ card }) {
   const [content, setContent] = useState(card.question);
 
-  let isClicked = false;
+  let isBackOfCard = false;
 
   function handleClick() {
 
