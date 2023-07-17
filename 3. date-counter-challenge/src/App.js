@@ -22,9 +22,10 @@ function StepAndCount() {
     return (
         <>
             <section>
-                <button onClick={handleStepDecrement}>-</button>
+                {/* <button onClick={handleStepDecrement}>-</button>
                 <span>Step: {step}</span>
-                <button onClick={handleStepIncrement}>+</button>
+                <button onClick={handleStepIncrement}>+</button> */}
+                <input type="range" min={0} max={10} />
             </section>
 
             < Counter step={step} />
