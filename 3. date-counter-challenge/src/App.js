@@ -54,7 +54,9 @@ function Counter({ step }) {
         <>
             <section>
                 <button onClick={handleCountDecrement}>-</button>
+
                 {/* <span>Count: {count}</span> */}
+                <input type="text" value={count} />
 
                 <button onClick={handleCountIncrement}>+</button>
             </section>
