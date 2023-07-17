@@ -11,11 +11,11 @@ function App() {
 function StepAndCount() {
     const [step, setStep] = useState(0);
 
-    function handleStepIncrement() {
+    function handleStepIncrement(e) {
         setStep(step => step + 1);
     }
 
-    function handleStepDecrement() {
+    function handleStepDecrement(e) {
         setStep(step => step - 1);
     }
 
