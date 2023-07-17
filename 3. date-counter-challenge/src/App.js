@@ -3,12 +3,12 @@ import { useState } from "react";
 function App() {
     return (
         <main>
-            < Stepper />
+            < StepAndCount />
         </main>
     )
 }
 
-function Stepper() {
+function StepAndCount() {
     const [step, setStep] = useState(0);
 
     function handleStepIncrement() {
