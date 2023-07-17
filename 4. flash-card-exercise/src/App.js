@@ -56,10 +56,7 @@ function Card({ question, answer }) {
   const [isSelected, setIsSelected] = useState(false);
 
   function handleClick() {
-    if (isSelected)
-      setIsSelected((isSelected) => (isSelected = false))
-    else
-      setIsSelected((isSelected) => (isSelected = true))
+    setIsSelected(isSelected ? false : true);
   }
 
   return (
