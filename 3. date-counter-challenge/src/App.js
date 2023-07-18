@@ -28,7 +28,7 @@ function StepAndCount() {
                 <input type="range" min={0} max={10} value={step}
                     onChange={e => setStep(e.target.value)}
                 />
-                <span>{step}</span>
+                <span> Step: {step}</span>
             </section>
 
             < Counter step={step} />
