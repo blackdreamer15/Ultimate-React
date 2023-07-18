@@ -40,11 +40,11 @@ function Counter({ step }) {
     const [count, setCount] = useState(0);
 
     function handleCountIncrement() {
-        setCount(count => count + step);
+        setCount(count => Number(count) + step);
     }
 
     function handleCountDecrement() {
-        setCount(count => count - step);
+        setCount(count => Number(count) - step);
     }
 
     let date = new Date();
@@ -56,7 +56,7 @@ function Counter({ step }) {
                 <button onClick={handleCountDecrement}>-</button>
 
                 {/* <span>Count: {count}</span> */}
-                <input type="text" value={count}
+                <input type="text" value={Number(`${count}`)}
                     onChange={e => setCount(Number(e.target.value))}
                 />
 
