@@ -39,15 +39,15 @@ function Counter({ step }) {
     return (
         <>
             <section>
-                <button onClick={(count) => count - step}>-</button>
+                <button onClick={() => setCount(count - step)}>-</button>
 
                 {/* <span>Count: {count}</span> */}
                 <input type="text" value={count}
                     onChange={e => setCount(Number(e.target.value))}
                 />
 
-                <button onClick={(count) => count + step}>+</button>
-            </section>
+                <button onClick={() => setCount(count + step)}>+</button>
+            </section >
 
             <p>
                 {count > 0 ?
@@ -58,9 +58,10 @@ function Counter({ step }) {
                 }: {date.toDateString()}
             </p>
 
-            {(count !== 0 || step !== 0) ?
-                <button type="reset" onClick={handleReset}>Reset</button>
-                : ""
+            {
+                (count !== 0 || step !== 0) ?
+                    <button type="reset" onClick={handleReset}>Reset</button>
+                    : ""
             }
 
         </>
