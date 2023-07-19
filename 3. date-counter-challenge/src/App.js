@@ -71,6 +71,12 @@ function Counter({ step }) {
                     )
                 }: {date.toDateString()}
             </p>
+
+            {(count !== 0 || step !== 0) ?
+                <button type="reset">Reset</button>
+                : ""
+            }
+
         </>
     );
 }
