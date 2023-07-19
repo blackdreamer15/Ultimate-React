@@ -28,14 +28,6 @@ function StepAndCount() {
 function Counter({ step }) {
     const [count, setCount] = useState(0);
 
-    function handleCountIncrement() {
-        setCount(count => count + step);
-    }
-
-    function handleCountDecrement() {
-        setCount(count => count - step);
-    }
-
     function handleReset() {
         setCount(0);
         setStep(1);
@@ -47,14 +39,14 @@ function Counter({ step }) {
     return (
         <>
             <section>
-                <button onClick={handleCountDecrement}>-</button>
+                <button onClick={(count) => count - step}>-</button>
 
                 {/* <span>Count: {count}</span> */}
                 <input type="text" value={count}
                     onChange={e => setCount(Number(e.target.value))}
                 />
 
-                <button onClick={handleCountIncrement}>+</button>
+                <button onClick={(count) => count + step}>+</button>
             </section>
 
             <p>
