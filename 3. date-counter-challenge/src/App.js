@@ -11,20 +11,9 @@ function App() {
 function StepAndCount() {
     const [step, setStep] = useState(0);
 
-    // function handleStepIncrement(e) {
-    //     setStep(step => step + 1);
-    // }
-
-    // function handleStepDecrement(e) {
-    //     setStep(step => step - 1);
-    // }
-
     return (
         <>
             <section>
-                {/* <button onClick={handleStepDecrement}>-</button>
-                <span>Step: {step}</span>
-                <button onClick={handleStepIncrement}>+</button> */}
                 <input type="range" min={0} max={10} value={step}
                     onChange={e => setStep(Number(e.target.value))}
                 />
