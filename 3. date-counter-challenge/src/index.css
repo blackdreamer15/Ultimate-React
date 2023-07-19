@@ -40,6 +40,9 @@ input[type="text"] {
   height: 3rem;
   padding: 1rem;
 }
+input[type="range"] {
+  width: 25rem;
+}
 
 input[type="text"],
 button,
