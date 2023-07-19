@@ -47,6 +47,11 @@ function Counter({ step }) {
         setCount(count => count - step);
     }
 
+    function handleReset() {
+        setCount(0);
+        setStep(1);
+    }
+
     let date = new Date();
     date.setDate(date.getDate() + count);
 
@@ -73,7 +78,7 @@ function Counter({ step }) {
             </p>
 
             {(count !== 0 || step !== 0) ?
-                <button type="reset">Reset</button>
+                <button type="reset" onClick={handleReset}>Reset</button>
                 : ""
             }
 
