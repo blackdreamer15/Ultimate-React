@@ -36,6 +36,12 @@ button:not([type="reset"]) {
   height: 3rem;
 }
 
+button[type="reset"] {
+  margin-top: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
 input[type="text"] {
   height: 3rem;
   padding: 1rem;
