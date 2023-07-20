@@ -34,6 +34,10 @@ export default function App() {
   const [image, setImage] = useState("");
   const [showAddFriend, setShowAddFriend] = useState(false);
 
+  function handleClicking() {
+
+  }
+
   return (
     <div className="app">
       <div className="sidebar">
