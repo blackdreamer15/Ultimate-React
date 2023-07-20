@@ -166,7 +166,7 @@ function SplitBillForm() {
       <label>👫 X's expense</label>
       <input type="text" disabled />
 
-      <label></label>
+      <label>🤑 Who is paying the bill?</label>
       <select>
         <option value="user">You</option>
         <option value="friend">X</option>
