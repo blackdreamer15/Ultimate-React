@@ -159,7 +159,7 @@ function SplitBillForm() {
       />
 
       <label>🧍 Your expense</label>
-      <input type="text" />
+      <input type="text" value={userExpense} />
 
       <label>👫 X's expense</label>
       <input type="text" disabled />
