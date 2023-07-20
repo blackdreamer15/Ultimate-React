@@ -146,7 +146,7 @@ function AddFriendForm({ friendList, onSetFriendList }) {
 }
 
 function SplitBillForm() {
-  const [bill, setBill] = useState(0);
+  const [bill, setBill] = useState("");
 
   return (
     <form className="form-split-bill">
