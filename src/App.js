@@ -35,7 +35,7 @@ export default function App() {
   const [showAddFriend, setShowAddFriend] = useState(false);
 
   function handleClicking() {
-
+    setShowAddFriend(showAddFriend => !showAddFriend);
   }
 
   return (
