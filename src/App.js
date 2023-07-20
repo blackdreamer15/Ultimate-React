@@ -161,7 +161,7 @@ function SplitBillForm() {
       <label>🧍 Your expense</label>
       <input type="text" value={userExpense}
         placeholder="Your expense"
-        onChange={ } />
+        onChange={e => { }} />
 
       <label>👫 X's expense</label>
       <input type="text" disabled />
