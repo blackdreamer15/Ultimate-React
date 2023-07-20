@@ -22,13 +22,9 @@ const initialFriends = [
 ];
 
 
-function Button({ showAddFriend, onShowAddFriend, children }) {
+function Button({ onClick, children }) {
   return (
-    <button className="button"
-      onClick={() => onShowAddFriend(
-        (showAddFriend) => !showAddFriend)
-      }
-    >{children}</button>
+    <button className="button">{children}</button>
   );
 }
 
