@@ -150,7 +150,7 @@ function AddFriendForm({ friendList, onSetFriendList }) {
   );
 }
 
-function SplitBillForm() {
+function SplitBillForm({ onSetShowBillForm }) {
   const [bill, setBill] = useState("");
   const [userExpense, setUserExpense] = useState("");
 
