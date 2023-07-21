@@ -112,7 +112,7 @@ function Friend({ name, image, balance, showBillForm, onSelection }) {
             </p>
           )
         )}
-      <Button onClick={ }>
+      <Button onClick={() => onSelection(friend)}>
         {showBillForm ? "Close" : "Select"}
       </Button>
     </li>
