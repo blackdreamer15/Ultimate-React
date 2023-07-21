@@ -48,7 +48,7 @@ export default function App() {
         <FriendList
           friendList={friendList}
           showBillForm={showBillForm}
-          onSetShowBillForm={handleShowBillForm}
+          onSelection={handleShowBillForm}
         />
 
         {showAddFriend &&
@@ -72,7 +72,7 @@ export default function App() {
 }
 
 
-function FriendList({ friendList, showBillForm, onSetShowBillForm }) {
+function FriendList({ friendList, showBillForm, onSelection }) {
 
   return (
     <ul>
@@ -83,7 +83,7 @@ function FriendList({ friendList, showBillForm, onSetShowBillForm }) {
             image={friend.image}
             balance={friend.balance}
             showBillForm={showBillForm}
-            onSelection={onSetShowBillForm}
+            onSelection={onSelection}
           />
         ))
       }
@@ -112,7 +112,7 @@ function Friend({ name, image, balance, showBillForm, onSelection }) {
             </p>
           )
         )}
-      <Button onClick={onSelection}>
+      <Button onClick={ }>
         {showBillForm ? "Close" : "Select"}
       </Button>
     </li>
