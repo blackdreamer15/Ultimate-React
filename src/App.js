@@ -58,7 +58,7 @@ export default function App() {
         </Button>
       </div>
 
-      {showBillForm && <SplitBillForm />}
+      {showBillForm && <SplitBillForm showBillForm={showBillForm} onSetShowBillForm={handleShowBillForm} />}
     </div>
   );
 }
