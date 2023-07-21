@@ -47,7 +47,12 @@ export default function App() {
           <AddFriendForm name={name} onSetName={setName} image={image} onSetImage={setImage} />
         }
 
-        <Button onClick={handleClicking}>Add Friend</Button>
+        <Button onClick={handleClicking}>
+          {
+            showAddFriend ?
+              "Close" : "Add Friend"
+          }
+        </Button>
       </div>
 
       <SplitBillForm />
