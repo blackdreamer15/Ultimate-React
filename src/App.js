@@ -72,7 +72,7 @@ export default function App() {
 }
 
 
-function FriendList({ friendList }) {
+function FriendList({ friendList, showBillForm, onSetShowBillForm }) {
 
   return (
     <ul>
