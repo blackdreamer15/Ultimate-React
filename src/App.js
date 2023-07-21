@@ -58,7 +58,7 @@ export default function App() {
         </Button>
       </div>
 
-      <SplitBillForm />
+      {showBillForm && <SplitBillForm />}
     </div>
   );
 }
