@@ -39,7 +39,7 @@ export default function App() {
   }
 
   function handleShowBillForm() {
-
+    setsShowBillForm(showBillForm => !showBillForm);
   }
 
   return (
