@@ -83,7 +83,7 @@ function FriendList({ friendList, showBillForm, onSetShowBillForm }) {
             image={friend.image}
             balance={friend.balance}
             showBillForm={showBillForm}
-            onClick={onSetShowBillForm}
+            onSelection={onSetShowBillForm}
           />
         ))
       }
@@ -91,7 +91,7 @@ function FriendList({ friendList, showBillForm, onSetShowBillForm }) {
   )
 }
 
-function Friend({ name, image, balance, showBillForm, onClick }) {
+function Friend({ name, image, balance, showBillForm, onSelection }) {
   return (
     <li>
       <img src={image} alt={name} />
@@ -112,7 +112,7 @@ function Friend({ name, image, balance, showBillForm, onClick }) {
             </p>
           )
         )}
-      <Button onClick={onClick}>
+      <Button onClick={onSelection}>
         {showBillForm ? "Close" : "Select"}
       </Button>
     </li>
