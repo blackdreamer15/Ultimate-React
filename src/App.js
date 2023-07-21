@@ -82,6 +82,8 @@ function FriendList({ friendList, showBillForm, onSetShowBillForm }) {
             name={friend.name}
             image={friend.image}
             balance={friend.balance}
+            showBillForm={showBillForm}
+            onClick={onSetShowBillForm}
           />
         ))
       }
