@@ -38,6 +38,10 @@ export default function App() {
     setShowAddFriend(showAddFriend => !showAddFriend);
   }
 
+  function handleShowBillForm() {
+
+  }
+
   return (
     <div className="app">
       <div className="sidebar">
