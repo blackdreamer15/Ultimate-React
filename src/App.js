@@ -45,7 +45,11 @@ export default function App() {
   return (
     <div className="app">
       <div className="sidebar">
-        <FriendList friendList={friendList} />
+        <FriendList
+          friendList={friendList}
+          showBillForm={showBillForm}
+          onSetShowBillForm={handleShowBillForm}
+        />
 
         {showAddFriend &&
           <AddFriendForm
