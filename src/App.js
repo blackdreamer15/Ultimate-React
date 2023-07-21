@@ -172,7 +172,7 @@ function SplitBillForm({ onSetShowBillForm }) {
       <input type="text" disabled />
 
       <label>🤑 Who is paying the bill?</label>
-      <select onClick={ }>
+      <select onClick={onSetShowBillForm}>
         <option value="user">You</option>
         <option value="friend">X</option>
       </select>
