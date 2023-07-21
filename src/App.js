@@ -38,7 +38,7 @@ export default function App() {
     setShowAddFriend(showAddFriend => !showAddFriend);
   }
 
-  function handleShowBillForm() {
+  function handleShowBillForm(friend) {
     setsShowBillForm(showBillForm => !showBillForm);
   }
 
