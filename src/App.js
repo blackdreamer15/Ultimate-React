@@ -91,7 +91,7 @@ function FriendList({ friendList, showBillForm, onSetShowBillForm }) {
   )
 }
 
-function Friend({ name, image, balance }) {
+function Friend({ name, image, balance, showBillForm, onClick }) {
   return (
     <li>
       <img src={image} alt={name} />
