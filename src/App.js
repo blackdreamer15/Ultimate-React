@@ -32,14 +32,14 @@ function Button({ onClick, children }) {
 export default function App() {
   const [showAddFriend, setShowAddFriend] = useState(false);
   const [friendList, setFriendList] = useState([]);
-  const [showBillForm, setsShowBillForm] = useState(false);
+  const [showBillForm, setSelectedFriend] = useState(false);
 
   function handleClicking() {
     setShowAddFriend(showAddFriend => !showAddFriend);
   }
 
-  function handleShowBillForm(friend) {
-    setsShowBillForm(showBillForm => !showBillForm);
+  function handleSelectedFriend(friend) {
+    setSelectedFriend(friend);
   }
 
   return (
@@ -48,7 +48,7 @@ export default function App() {
         <FriendList
           friendList={friendList}
           showBillForm={showBillForm}
-          onSelection={handleShowBillForm}
+          onSelection={handleSelectedFriend}
         />
 
         {showAddFriend &&
