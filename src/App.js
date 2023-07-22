@@ -89,7 +89,7 @@ function FriendList({ friendList, showBillForm, onSelection }) {
   )
 }
 
-function Friend({ name, image, balance, showBillForm, onSelection }) {
+function Friend({ friend, showBillForm, onSelection }) {
   return (
     <li>
       <img src={image} alt={name} />
