@@ -79,9 +79,7 @@ function FriendList({ friendList, showBillForm, onSelection }) {
       {
         friendList.map((friend) => (
           <Friend key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            balance={friend.balance}
+            friend={friend}
             showBillForm={showBillForm}
             onSelection={onSelection}
           />
