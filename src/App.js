@@ -72,7 +72,7 @@ export default function App() {
 }
 
 
-function FriendList({ friendList, showBillForm, onSelection }) {
+function FriendList({ friendList, selectedFriend, onSelection }) {
 
   return (
     <ul>
@@ -80,7 +80,7 @@ function FriendList({ friendList, showBillForm, onSelection }) {
         friendList.map((friend) => (
           <Friend key={friend.id}
             friend={friend}
-            showBillForm={showBillForm}
+            selectedFriend={selectedFriend}
             onSelection={onSelection}
           />
         ))
@@ -89,7 +89,7 @@ function FriendList({ friendList, showBillForm, onSelection }) {
   )
 }
 
-function Friend({ friend, showBillForm, onSelection }) {
+function Friend({ friend, onSelection, selectedFriend }) {
   return (
     <li>
       <img src={friend.image} alt={friend.name} />
@@ -111,7 +111,7 @@ function Friend({ friend, showBillForm, onSelection }) {
           )
         )}
       <Button onClick={() => onSelection(friend)}>
-        {showBillForm ? "Close" : "Select"}
+        {selectedFriend.id === friend.id ? "Close" : "Select"}
       </Button>
     </li>
   );
