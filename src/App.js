@@ -47,7 +47,7 @@ export default function App() {
       <div className="sidebar">
         <FriendList
           friendList={friendList}
-          showBillForm={showBillForm}
+          selectedFriend={selectedFriend}
           onSelection={handleSelectedFriend}
         />
 
@@ -66,7 +66,7 @@ export default function App() {
         </Button>
       </div>
 
-      {showBillForm && <SplitBillForm />}
+      {selectedFriend && <SplitBillForm />}
     </div>
   );
 }
