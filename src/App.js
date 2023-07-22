@@ -92,21 +92,21 @@ function FriendList({ friendList, showBillForm, onSelection }) {
 function Friend({ friend, showBillForm, onSelection }) {
   return (
     <li>
-      <img src={image} alt={name} />
-      <h3>{name}</h3>
+      <img src={friend.image} alt={friend.name} />
+      <h3>{friend.name}</h3>
 
-      {balance > 0 ?
+      {friend.balance > 0 ?
         <p className="green">
-          {name} owes you {balance}€
+          {friend.name} owes you {friend.balance}€
         </p>
         :
-        ((balance < 0) ?
+        ((friend.balance < 0) ?
           <p className="red">
-            You owe {name} you {balance}€
+            You owe {friend.name} you {friend.balance}€
           </p>
           : (
             <p>
-              You and {name} are even
+              You and {friend.name} are even
             </p>
           )
         )}
