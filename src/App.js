@@ -66,7 +66,7 @@ export default function App() {
         </Button>
       </div>
 
-      {selectedFriend && <SplitBillForm />}
+      {selectedFriend && <SplitBillForm selectedFriend={selectedFriend} />}
     </div>
   );
 }
