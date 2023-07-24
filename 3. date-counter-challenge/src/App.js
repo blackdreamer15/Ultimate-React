@@ -50,7 +50,11 @@ function Counter() {
 
             {
                 (count !== 0 || step !== 1) ?
-                    <button type="reset" onClick={handleReset}>Reset</button>
+                    <div onClick={handleReset}>
+                        <button type="reset">
+                            Reset
+                        </button>
+                    </div>
                     : null
             }
 
