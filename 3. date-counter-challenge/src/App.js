@@ -49,7 +49,7 @@ function Counter() {
             </p>
 
             {
-                (count !== 0 || step !== 0) ?
+                (count !== 0 || step !== 1) ?
                     <button type="reset" onClick={handleReset}>Reset</button>
                     : ""
             }
