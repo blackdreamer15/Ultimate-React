@@ -7,7 +7,7 @@ function App() {
 }
 
 function Counter() {
-    const [step, setStep] = useState(0);
+    const [step, setStep] = useState(1);
     const [count, setCount] = useState(0);
 
     function handleReset() {
