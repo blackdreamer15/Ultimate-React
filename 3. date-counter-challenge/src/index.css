@@ -35,8 +35,11 @@ button:not([type="reset"]) {
   height: 3rem;
 }
 
-button[type="reset"] {
+div:last-of-type {
   margin-top: 1rem;
+}
+
+button[type="reset"] {
   padding: 1rem;
   cursor: pointer;
 }
