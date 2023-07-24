@@ -19,7 +19,7 @@ function Counter() {
     date.setDate(date.getDate() + count);
 
     return (
-        <>
+        <main>
 
             <section>
                 <input type="range" min={0} max={10} value={step}
