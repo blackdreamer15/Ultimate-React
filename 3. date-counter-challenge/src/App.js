@@ -3,29 +3,13 @@ import { useState } from "react";
 function App() {
     return (
         <main>
-            < StepAndCount />
+            < Counter />
         </main>
     )
 }
 
-function StepAndCount() {
+function Counter() {
     const [step, setStep] = useState(0);
-
-    return (
-        <>
-            <section>
-                <input type="range" min={0} max={10} value={step}
-                    onChange={e => setStep(Number(e.target.value))}
-                />
-                <span> Step: {step}</span>
-            </section>
-
-            < Counter step={step} />
-        </>
-    );
-}
-
-function Counter({ step }) {
     const [count, setCount] = useState(0);
 
     function handleReset() {
@@ -37,7 +21,15 @@ function Counter({ step }) {
     date.setDate(date.getDate() + count);
 
     return (
-        <>
+        <main>
+
+            <section>
+                <input type="range" min={0} max={10} value={step}
+                    onChange={e => setStep(Number(e.target.value))}
+                />
+                <span> Step: {step}</span>
+            </section>
+
             <section>
                 <button onClick={() => setCount(count - step)}>-</button>
 
@@ -64,7 +56,7 @@ function Counter({ step }) {
                     : ""
             }
 
-        </>
+        </main>
     );
 }
 
