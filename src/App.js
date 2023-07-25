@@ -46,6 +46,8 @@ function Form() {
       packed: false
     }
 
+    handleAddItem(newItem);
+
     setDescription("");
     setquantity(1);
   }
