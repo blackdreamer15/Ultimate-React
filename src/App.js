@@ -85,7 +85,7 @@ function Form({ onAddItem }) {
   );
 }
 
-function PackingList({ item }) {
+function PackingList({ items }) {
   return (
     <div className="list">
       <ul>
