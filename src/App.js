@@ -35,7 +35,7 @@ function Logo() {
   );
 }
 
-function Form() {
+function Form({ onAddItem }) {
   const [description, setDescription] = useState("");
   const [quantity, setquantity] = useState(1);
 
@@ -85,7 +85,7 @@ function Form() {
   );
 }
 
-function PackingList() {
+function PackingList({ item }) {
   return (
     <div className="list">
       <ul>
