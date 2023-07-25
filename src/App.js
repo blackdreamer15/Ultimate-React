@@ -7,6 +7,12 @@ const initialItems = [
 ];
 
 function App() {
+  const [items, setItems] = useState([]);
+
+  function handleAddItem(newItem) {
+    setItems((items) => ([...items, newItem]));
+  }
+
   return (
     <div className="app">
       <Logo />
@@ -32,7 +38,6 @@ function Logo() {
 function Form() {
   const [description, setDescription] = useState("");
   const [quantity, setquantity] = useState(1);
-  const [items, setItems] = useState([]);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -52,10 +57,6 @@ function Form() {
     setquantity(1);
   }
 
-
-  function handleAddItem(newItem) {
-    setItems((items) => ([...items, newItem]));
-  }
 
   return (
     <form className="add-form" onSubmit={handleSubmit}>
