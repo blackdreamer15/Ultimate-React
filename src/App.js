@@ -18,8 +18,8 @@ function App() {
       <Logo />
 
       {/* <main> */}
-      <Form />
-      <PackingList />
+      <Form onAddItem={handleAddItem} />
+      <PackingList items={items} />
       {/* </main> */}
 
       <Stats />
