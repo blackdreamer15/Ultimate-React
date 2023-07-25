@@ -51,7 +51,7 @@ function Form({ onAddItem }) {
       packed: false
     }
 
-    handleAddItem(newItem);
+    onAddItem(newItem);
 
     setDescription("");
     setquantity(1);
