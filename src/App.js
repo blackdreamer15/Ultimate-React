@@ -14,7 +14,7 @@ function App() {
   }
 
   function handleDeleteItem(id) {
-    ;
+    setItems(items.filter(item => item.id !== id));
   }
 
   return (
