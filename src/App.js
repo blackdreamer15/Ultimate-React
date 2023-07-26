@@ -23,7 +23,7 @@ function App() {
 
       {/* <main> */}
       <Form onAddItem={handleAddItem} />
-      <PackingList items={items} />
+      <PackingList items={items} onDeleteItem={handleDeleteItem} />
       {/* </main> */}
 
       <Stats />
