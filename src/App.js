@@ -98,7 +98,7 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
     <div className="list">
       <ul>
         {items.map((item) => (
-          <Item item={item} key={item.id} onDeleteItem={onDeleteItem} />
+          <Item item={item} key={item.id} onDeleteItem={onDeleteItem} onUpdateItem={onUpdateItem} />
         ))}
       </ul>
     </div>
