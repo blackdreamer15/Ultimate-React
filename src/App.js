@@ -17,6 +17,10 @@ function App() {
     setItems(items.filter(item => item.id !== id));
   }
 
+  function handleUpdateItem(id) {
+
+  }
+
   return (
     <div className="app">
       <Logo />
