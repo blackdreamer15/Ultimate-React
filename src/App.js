@@ -108,7 +108,7 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
 function Item({ item, onDeleteItem, onUpdateItem }) {
   return (
     <li>
-      <input type="checkbox" />
+      <input type="checkbox" value={item.description} />
       <span style={item.packed ? { textDecoration: "line-through" } : {}}>
         {item.quantity} {item.description}
       </span>
