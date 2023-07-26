@@ -13,6 +13,10 @@ function App() {
     setItems((items) => ([...items, newItem]));
   }
 
+  function handleDeleteItem(id) {
+    ;
+  }
+
   return (
     <div className="app">
       <Logo />
