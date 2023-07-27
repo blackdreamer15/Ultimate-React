@@ -119,7 +119,7 @@ function Item({ item, onDeleteItem, onUpdateItem }) {
   );
 }
 
-function Stats({ numOfItems }) {
+function Stats({ numOfItems, numOfPackedItems }) {
   return (
     <footer className="stats">
       <p>
