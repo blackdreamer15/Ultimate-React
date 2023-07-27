@@ -9,6 +9,7 @@ import { useState } from "react";
 function App() {
   const [items, setItems] = useState([]);
   const numOfItems = items.length;
+  const numOfPackedItems = items.filter(item => item.packed).length;
 
   function handleAddItem(newItem) {
     setItems((items) => ([...items, newItem]));
