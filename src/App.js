@@ -118,7 +118,7 @@ function Item({ item, onDeleteItem, onUpdateItem }) {
   );
 }
 
-function Stats() {
+function Stats({ numOfItems }) {
   return (
     <footer className="stats">
       <p>
