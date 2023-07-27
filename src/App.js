@@ -31,7 +31,7 @@ function App() {
       <PackingList items={items} onDeleteItem={handleDeleteItem} onUpdateItem={handleUpdateItem} />
       {/* </main> */}
 
-      <Stats />
+      <Stats numOfItems={numOfItems} />
     </div>
   );
 }
