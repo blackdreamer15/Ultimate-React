@@ -124,7 +124,7 @@ function Stats({ numOfItems, numOfPackedItems }) {
     <footer className="stats">
       <p>
         <i>
-          You have {numOfItems} items on your list, and you have already packed X (X%)
+          You have {numOfItems} items on your list, and you have already packed {numOfPackedItems} (X%)
         </i>
       </p>
     </footer>
