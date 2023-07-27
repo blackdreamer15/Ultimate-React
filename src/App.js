@@ -120,12 +120,13 @@ function Item({ item, onDeleteItem, onUpdateItem }) {
 function Stats({ items }) {
   const numOfItems = items.length;
   const numOfPackedItems = items.filter(item => item.packed).length;
+  const percentage = (numOfPackedItems / numOfItems) * 100;
 
   return (
     <footer className="stats">
       <p>
         <i>
-          You have {numOfItems} items on your list, and you have already packed {numOfPackedItems} ({(numOfPackedItems / numOfItems) * 100}%)
+          You have {numOfItems} items on your list, and you have already packed {numOfPackedItems} ({percentage}%)
         </i>
       </p>
     </footer>
