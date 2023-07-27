@@ -8,8 +8,6 @@ import { useState } from "react";
 
 function App() {
   const [items, setItems] = useState([]);
-  const numOfItems = items.length;
-  const numOfPackedItems = items.filter(item => item.packed).length;
 
   function handleAddItem(newItem) {
     setItems((items) => ([...items, newItem]));
@@ -32,7 +30,7 @@ function App() {
       <PackingList items={items} onDeleteItem={handleDeleteItem} onUpdateItem={handleUpdateItem} />
       {/* </main> */}
 
-      <Stats numOfItems={numOfItems} numOfPackedItems={numOfPackedItems} />
+      <Stats items={items} />
     </div>
   );
 }
@@ -119,7 +117,10 @@ function Item({ item, onDeleteItem, onUpdateItem }) {
   );
 }
 
-function Stats({ numOfItems, numOfPackedItems }) {
+function Stats({ items }) {
+  const numOfItems = items.length;
+  const numOfPackedItems = items.filter(item => item.packed).length;
+
   return (
     <footer className="stats">
       <p>
