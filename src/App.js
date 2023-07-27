@@ -8,6 +8,7 @@ import { useState } from "react";
 
 function App() {
   const [items, setItems] = useState([]);
+  const numOfItems = items.length;
 
   function handleAddItem(newItem) {
     setItems((items) => ([...items, newItem]));
