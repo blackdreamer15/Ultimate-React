@@ -103,7 +103,11 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
       </ul>
 
       <div className="actions">
-
+        <select>
+          <option>sort by input order</option>
+          <option>sort by description</option>
+          <option>sort by packed status</option>
+        </select>
       </div>
     </div>
   );
