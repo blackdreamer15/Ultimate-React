@@ -108,6 +108,7 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
           <option>sort by description</option>
           <option>sort by packed status</option>
         </select>
+        <button>Clear list</button>
       </div>
     </div>
   );
