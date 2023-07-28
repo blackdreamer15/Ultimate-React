@@ -120,7 +120,7 @@ function Item({ item, onDeleteItem, onUpdateItem }) {
 function Stats({ items }) {
   const numOfItems = items.length;
   const numOfPackedItems = items.filter(item => item.packed).length;
-  const percentage = (numOfPackedItems / numOfItems) * 100;
+  const percentage = Math.round((numOfPackedItems / numOfItems) * 100);
 
   return (
     <footer className="stats">
