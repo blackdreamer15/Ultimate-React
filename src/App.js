@@ -95,10 +95,10 @@ function Form({ onAddItem }) {
 
 function PackingList({ items, onDeleteItem, onUpdateItem }) {
   const [sortBy, setSortBy] = useState("input");
+  let sortedItems;
 
   function handleSorting(e) {
-    let descTemp = "", packedTemp = false;
-    let sortedItems;
+    let descTemp = "";
     setSortBy(e.target.value);
 
     if (sortBy === "input") sortedItems = items;
@@ -122,7 +122,7 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
   return (
     <div className="list">
       <ul>
-        {items.map((item) => (
+        {sortedItems.map((item) => (
           <Item item={item} key={item.id} onDeleteItem={onDeleteItem} onUpdateItem={onUpdateItem} />
         ))}
       </ul>
