@@ -115,13 +115,13 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
 
       <div className="actions">
         <select>
-          <option value={sortBy} onChange={ }>
+          <option value={sortBy} onChange={(e) => { handleSorting(e) }}>
             sort by input order
           </option>
-          <option value={sortBy} onChange={ }>
+          <option value={sortBy} onChange={(e) => { handleSorting(e) }}>
             sort by description
           </option>
-          <option value={sortBy} onChange={ }>
+          <option value={sortBy} onChange={(e) => { handleSorting(e) }}>
             sort by packed status
           </option>
         </select>
