@@ -110,9 +110,15 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
 
       <div className="actions">
         <select>
-          <option value="input">sort by input order</option>
-          <option value="description">sort by description</option>
-          <option value="packed">sort by packed status</option>
+          <option value="input" onChange={(e) => setSortBy(e.target.value)}>
+            sort by input order
+          </option>
+          <option value="description" onChange={(e) => setSortBy(e.target.value)}>
+            sort by description
+          </option>
+          <option value="packed" onChange={(e) => setSortBy(e.target.value)}>
+            sort by packed status
+          </option>
         </select>
         <button onClick={handleClearList}>Clear list</button>
       </div>
