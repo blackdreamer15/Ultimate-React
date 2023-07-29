@@ -94,6 +94,8 @@ function Form({ onAddItem }) {
 }
 
 function PackingList({ items, onDeleteItem, onUpdateItem }) {
+  const [sortBy, setSortBy] = useState("input");
+
   function handleClearList() {
 
   }
