@@ -95,27 +95,28 @@ function Form({ onAddItem }) {
 
 function PackingList({ items, onDeleteItem, onUpdateItem }) {
   const [sortBy, setSortBy] = useState("input");
+
   let sortedItems;
+  if (sortBy === "input") sortedItems = items;
+  if (sortBy === "description") sortedItems = items.slice().sort((a, b) => a.description.localeCompare(b.description))
 
-  function handleSorting(e) {
-    // let descTemp = "";
-    setSortBy(e.target.value);
+  // function handleSorting() {
+  //   let descTemp = "";
 
-    if (sortBy === "input") sortedItems = items;
-    // else if (sortBy === "description") {
-    //   sortedItems = items.filter(item => {
-    //     if (item.description < descTemp) {
-    //       descTemp = item.description;
-    //     }
-    //     return item;
-    //   });
-    // }
-    // else if (sortBy === "packed") {
-    //   sortedItems = items.filter(item => {
-    //     (item.packed === true) ? return item: return;
-    //   });
-    // }
-  }
+  //   else if (sortBy === "description") {
+  //     sortedItems = items.filter(item => {
+  //       if (item.description < descTemp) {
+  //         descTemp = item.description;
+  //       }
+  //       return item;
+  //     });
+  //   }
+  //   // else if (sortBy === "packed") {
+  //   //   sortedItems = items.filter(item => {
+  //   //     (item.packed === true) ? return item: return;
+  //   //   });
+  //   // }
+  // }
 
   function handleClearList() {
 
@@ -130,21 +131,21 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
         ))}
       </ul>
 
-      <div className="actions">
+      <div className="actions" onChange={e => setSortBy(e.target.value)}>
         <select>
-          <option value={sortBy} onChange={(e) => { handleSorting(e) }}>
+          <option value="input">
             sort by input order
           </option>
-          <option value={sortBy} onChange={(e) => { handleSorting(e) }}>
+          <option value="description">
             sort by description
           </option>
-          <option value={sortBy} onChange={(e) => { handleSorting(e) }}>
+          <option value="packed">
             sort by packed status
           </option>
-        </select>
+        </select >
         <button onClick={handleClearList}>Clear list</button>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }
 
