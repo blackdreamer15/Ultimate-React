@@ -97,7 +97,7 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
   const [sortBy, setSortBy] = useState("input");
 
   function handleSorting(e) {
-    let descTemp = "", packedTemp;
+    let descTemp = "", packedTemp = false;
     let sortedItems;
     setSortBy(e.target.value);
 
@@ -109,6 +109,9 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
       }
     });
     else if (sortBy === "packed")
+      sortedItems = items.filter(item => {
+        if (item.packed === true) return item;
+      });
   }
 
   function handleClearList() {
