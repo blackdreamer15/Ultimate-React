@@ -97,11 +97,17 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
   const [sortBy, setSortBy] = useState("input");
 
   function handleSorting(e) {
+    let descTemp = "", packedTemp;
     let sortedItems;
     setSortBy(e.target.value);
 
     if (sortBy === "input") sortedItems = items;
-    else if (sortBy === "description")
+    else if (sortBy === "description") sortedItems = items.filter(item => {
+      if (item.description < descTemp) {
+        descTemp = item.description;
+        return item;
+      }
+    });
     else if (sortBy === "packed")
   }
 
