@@ -94,6 +94,10 @@ function Form({ onAddItem }) {
 }
 
 function PackingList({ items, onDeleteItem, onUpdateItem }) {
+  function handleClearList() {
+
+  }
+
   return (
     <div className="list">
       <ul>
