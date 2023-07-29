@@ -96,27 +96,29 @@ function Form({ onAddItem }) {
 function PackingList({ items, onDeleteItem, onUpdateItem }) {
   const [sortBy, setSortBy] = useState("input");
 
-  let sortedItems;
-  if (sortBy === "input") sortedItems = items;
-  if (sortBy === "description") sortedItems = items.slice().sort((a, b) => a.description.localeCompare(b.description))
+  let sortedItems = items;
 
-  // function handleSorting() {
-  //   let descTemp = "";
+  function handleSorting(e) {
+    //   let descTemp = "";
+    setSortBy(e.target.value);
 
-  //   else if (sortBy === "description") {
-  //     sortedItems = items.filter(item => {
-  //       if (item.description < descTemp) {
-  //         descTemp = item.description;
-  //       }
-  //       return item;
-  //     });
-  //   }
-  //   // else if (sortBy === "packed") {
-  //   //   sortedItems = items.filter(item => {
-  //   //     (item.packed === true) ? return item: return;
-  //   //   });
-  //   // }
-  // }
+    if (sortBy === "input") sortedItems = items;
+    if (sortBy === "description") sortedItems = items.slice().sort((a, b) => a.description.localeCompare(b.description))
+
+    //   else if (sortBy === "description") {
+    //     sortedItems = items.filter(item => {
+    //       if (item.description < descTemp) {
+    //         descTemp = item.description;
+    //       }
+    //       return item;
+    //     });
+    //   }
+    //   // else if (sortBy === "packed") {
+    //   //   sortedItems = items.filter(item => {
+    //   //     (item.packed === true) ? return item: return;
+    //   //   });
+    //   // }
+  }
 
   function handleClearList() {
 
@@ -131,8 +133,8 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
         ))}
       </ul>
 
-      <div className="actions" onChange={e => setSortBy(e.target.value)}>
-        <select>
+      <div className="actions">
+        <select onChange={e => handleSorting(e)}>
           <option value="input">
             sort by input order
           </option>
