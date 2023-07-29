@@ -98,20 +98,23 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
   let sortedItems;
 
   function handleSorting(e) {
-    let descTemp = "";
+    // let descTemp = "";
     setSortBy(e.target.value);
 
     if (sortBy === "input") sortedItems = items;
-    else if (sortBy === "description") sortedItems = items.filter(item => {
-      if (item.description < descTemp) {
-        descTemp = item.description;
-        return item;
-      }
-    });
-    else if (sortBy === "packed")
-      sortedItems = items.filter(item => {
-        if (item.packed === true) return item;
-      });
+    // else if (sortBy === "description") {
+    //   sortedItems = items.filter(item => {
+    //     if (item.description < descTemp) {
+    //       descTemp = item.description;
+    //     }
+    //     return item;
+    //   });
+    // }
+    // else if (sortBy === "packed") {
+    //   sortedItems = items.filter(item => {
+    //     (item.packed === true) ? return item: return;
+    //   });
+    // }
   }
 
   function handleClearList() {
