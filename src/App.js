@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Logo from "./Logo";
+
 
 // const initialItems = [
 //   { id: 1, description: "Passports", quantity: 2, packed: false },
