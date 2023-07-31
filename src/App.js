@@ -45,13 +45,7 @@ function App() {
   );
 }
 
-function Logo() {
-  return (
-    // <header>
-    <h1>🏝️ Far Away 🧳</h1>
-    // </header>
-  );
-}
+
 
 function Form({ onAddItem }) {
   const [description, setDescription] = useState("");
