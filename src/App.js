@@ -22,7 +22,7 @@ function App() {
   }
 
   function handleClearList() {
-
+    if (!items.length) return;
 
     const isConfirmed = window.confirm("Are you sure you want to delete all items?");
     if (isConfirmed) setItems([]);
