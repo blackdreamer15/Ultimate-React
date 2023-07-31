@@ -27,7 +27,7 @@ function App() {
 
       {/* <main> */}
       <Form onAddItem={handleAddItem} />
-      <PackingList items={items} onDeleteItem={handleDeleteItem} onUpdateItem={handleUpdateItem} />
+      <PackingList items={items} onSetItems={setItems} onDeleteItem={handleDeleteItem} onUpdateItem={handleUpdateItem} />
       {/* </main> */}
 
       <Stats items={items} />
@@ -93,7 +93,7 @@ function Form({ onAddItem }) {
   );
 }
 
-function PackingList({ items, onDeleteItem, onUpdateItem }) {
+function PackingList({ items, onSetItems, onDeleteItem, onUpdateItem }) {
   const [sortBy, setSortBy] = useState("input");
 
   let sortedItems;
@@ -126,7 +126,7 @@ function PackingList({ items, onDeleteItem, onUpdateItem }) {
   // }
 
   function handleClearList() {
-
+    onSetItems([]);
   }
 
 
