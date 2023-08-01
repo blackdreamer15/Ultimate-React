@@ -50,3 +50,13 @@ body {
   padding-bottom: 16px;
   line-height: 1.6;
 }
+
+.content-box ul {
+  color: #868e96;
+  margin-left: 16px;
+  margin-top: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
