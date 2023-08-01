@@ -3,3 +3,7 @@ export default function App() {
         <p>Hello React!</p>
     );
 }
+
+function Accordion() {
+    return <div>TODO</div>;
+}
