@@ -32,3 +32,9 @@ body {
   row-gap: 32px;
   align-items: center;
 }
+
+.number {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ced4da;
+}
