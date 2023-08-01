@@ -25,7 +25,13 @@ export default function App() {
 }
 
 function Accordion() {
-    return <div>TODO</div>;
+    return (
+        {
+            faqs.map((faq) => (
+                <Item title={faq.title} text={faq.text} />
+            ))
+        }
+    );
 }
 
 function Item() {
