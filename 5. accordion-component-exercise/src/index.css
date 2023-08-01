@@ -9,3 +9,11 @@ body {
   color: #343a40;
   line-height: 1;
 }
+
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
