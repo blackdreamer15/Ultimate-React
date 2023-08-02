@@ -44,8 +44,8 @@ function Item({ num, title, text }) {
         <div className="item">
             <p className="number">{num}</p>
             <p className="title">{title}</p>
-            <div className="content-box">{text}</div>
             <p className="icon">{isOpen ? "-" : "+"}</p>
+            <div className="content-box">{text}</div>
         </div>
     );
 }
