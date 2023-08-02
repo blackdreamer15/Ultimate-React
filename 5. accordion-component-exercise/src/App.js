@@ -44,7 +44,10 @@ function Item({ num, title, text }) {
         <div className="item">
             <p className="number">{num}</p>
             <p className="title">{title}</p>
-            <p className="icon">{isOpen ? "-" : "+"}</p>
+            <p className="icon"
+                onClick={handleClicking}>
+                {isOpen ? "-" : "+"}
+            </p>
             <div className="content-box">{text}</div>
         </div>
     );
