@@ -39,9 +39,9 @@ function Accordion({ data }) {
 function Item({ num, title, text }) {
     return (
         <div className="item">
-            <p>{num} </p>
-            <p>{title} </p>
-            <p>{text} </p>
+            <p className="number">{num}</p>
+            <p className="title">{title}</p>
+            <p className="content-box">{text}</p>
         </div>
     );
 }
