@@ -36,6 +36,6 @@ function Accordion({ data }) {
     );
 }
 
-function Item() {
+function Item({ title, text }) {
     return ();
 }
