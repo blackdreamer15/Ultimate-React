@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const faqs = [
     {
         title: "Where are these chairs assembled?",
@@ -37,6 +39,7 @@ function Accordion({ data }) {
 }
 
 function Item({ num, title, text }) {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <div className="item">
             <p className="number">{num}</p>
