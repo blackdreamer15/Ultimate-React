@@ -26,11 +26,13 @@ export default function App() {
 
 function Accordion({ data }) {
     return (
-        {
-            data.map((faq) => (
-                <Item title={faq.title} text={faq.text} />
-            ))
-        }
+        <div className="accordion">
+            {
+                data.map((faq) => (
+                    <Item title={faq.title} text={faq.text} />
+                ))
+            }
+        </div>
     );
 }
 
