@@ -42,6 +42,7 @@ function Item({ num, title, text }) {
             <p className="number">{num}</p>
             <p className="title">{title}</p>
             <p className="content-box">{text}</p>
+            <p className="icon">{isOpen ? "-" : "+"}</p>
         </div>
     );
 }
