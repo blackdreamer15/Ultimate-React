@@ -37,5 +37,8 @@ function Accordion({ data }) {
 }
 
 function Item({ title, text }) {
-    return ();
+    return (
+        <div className="item">
+        </div>
+    );
 }
