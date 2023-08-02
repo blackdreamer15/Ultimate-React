@@ -27,7 +27,7 @@ export default function App() {
 function Accordion({ data }) {
     return (
         {
-            faqs.map((faq) => (
+            data.map((faq) => (
                 <Item title={faq.title} text={faq.text} />
             ))
         }
