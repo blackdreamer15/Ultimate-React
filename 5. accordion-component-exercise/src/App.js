@@ -24,7 +24,7 @@ export default function App() {
     );
 }
 
-function Accordion() {
+function Accordion({ data }) {
     return (
         {
             faqs.map((faq) => (
