@@ -47,13 +47,18 @@ function Item({ num, title, text }) {
 
     return (
         <div className={`item ${isOpen ? "open" : ""}`}>
+
             <p className="number">{num}</p>
+
             <p className="title">{title}</p>
+
             <p className="icon"
                 onClick={handleClicking}>
                 {isOpen ? "-" : "+"}
             </p>
+
             <div className="content-box">{text}</div>
+
         </div >
     );
 }
