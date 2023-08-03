@@ -46,8 +46,9 @@ function Item({ num, title, text }) {
     }
 
     return (
-        <div className={`item ${isOpen ? "open" : ""}`}>
-
+        <div className={`item ${isOpen ? "open" : ""}`}
+            onClick={handleClicking}
+        >
             <p className="number">
                 {(num < 10) ?
                     `0${num + 1}` : `${num + 1}`
@@ -56,15 +57,13 @@ function Item({ num, title, text }) {
 
             <p className="title">{title}</p>
 
-            <p className="icon"
-                onClick={handleClicking}>
+            <p className="icon">
                 {isOpen ? "-" : "+"}
             </p>
 
             <div className="content-box">
                 {isOpen ? `${text}` : null}
             </div>
-
         </div >
     );
 }
