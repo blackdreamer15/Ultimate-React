@@ -40,6 +40,11 @@ function Accordion({ data }) {
 
 function Item({ num, title, text }) {
     const [isOpen, setIsOpen] = useState(false);
+
+    function handleClicking() {
+        setIsOpen(!isOpen);
+    }
+
     return (
         <div className="item">
             <p className="number">{num}</p>
