@@ -61,7 +61,9 @@ function Item({ num, title, text }) {
                 {isOpen ? "-" : "+"}
             </p>
 
-            <div className="content-box">{text}</div>
+            <div className="content-box">
+                {isOpen ? `${text}` : null}
+            </div>
 
         </div >
     );
