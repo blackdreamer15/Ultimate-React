@@ -48,7 +48,11 @@ function Item({ num, title, text }) {
     return (
         <div className={`item ${isOpen ? "open" : ""}`}>
 
-            <p className="number">{num}</p>
+            <p className="number">
+                {(num < 10) ?
+                    `0${num + 1}` : `${num + 1}`
+                }
+            </p>
 
             <p className="title">{title}</p>
 
