@@ -50,7 +50,7 @@ function Item({ num, title, text }) {
             onClick={handleClicking}
         >
             <p className="number">
-                {(num < 10) ?
+                {(num < 9) ?
                     `0${num + 1}` : `${num + 1}`
                 }
             </p>
