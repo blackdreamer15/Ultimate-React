@@ -44,11 +44,11 @@ export default function App() {
 
                     <div className="buttons">
                         <Button bgColor="#7950f2" color="#fff" onClick={handlePrevious}>
-                            👈Previous
+                            👈 Previous
                         </Button>
 
                         <Button bgColor="#7950f2" color="#fff" onClick={handlePrevious}>
-                            Next👉
+                            Next 👉
                         </Button>
                     </div>
                 </div >
