@@ -60,7 +60,7 @@ export default function App() {
     );
 }
 
-function Button() {
+function Button({ bgColor, color, onClick }) {
     return (
         <button>
 
