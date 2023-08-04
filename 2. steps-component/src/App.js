@@ -62,8 +62,8 @@ export default function App() {
 
 function Button({ bgColor, color, onClick, children }) {
     return (
-        <button>
-
+        <button style={{backgroundColor: bgColor, color: color}}>
+            {children}
         </button>
     );
 }
