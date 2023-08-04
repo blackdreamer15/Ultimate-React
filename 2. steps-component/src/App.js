@@ -47,7 +47,7 @@ export default function App() {
                             👈 Previous
                         </Button>
 
-                        <Button bgColor="#7950f2" color="#fff" onClick={handlePrevious}>
+                        <Button bgColor="#7950f2" color="#fff" onClick={handleNext}>
                             Next 👉
                         </Button>
                     </div>
