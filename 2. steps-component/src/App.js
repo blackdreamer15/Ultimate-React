@@ -8,7 +8,7 @@ const messages = [
 ];
 
 
-function App() {
+export default function App() {
     const [step, setStep] = useState(1);
     const [isOpen, setIsOpen] = useState(true);
 
@@ -56,4 +56,3 @@ function App() {
 
     );
 }
-export default App;
