@@ -38,7 +38,7 @@ export default function App() {
                         <div className={step >= 3 ? "active" : ""}>3</div>
                     </div>
 
-                    <Message step={step} />
+                    <StepMessage step={step} />
 
                     <div className="buttons">
                         <Button bgColor="#7950f2" color="#fff" onClick={handlePrevious}>
@@ -58,13 +58,13 @@ export default function App() {
 
 function Button({ bgColor, color, onClick, children }) {
     return (
-        <button style={{ backgroundColor: bgColor, color: color }} onClick={onClick}>
+        <bu tton style={{ backgroundColor: bgColor, color: color }} onClick={onClick}>
             {children}
-        </button>
+        </bu>
     );
 }
 
-function Message({ step }) {
+function StepMessage({ step }) {
     return (
         <p className="message">
             <h3>Step {step}</h3> {messages[step - 1]}
