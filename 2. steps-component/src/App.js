@@ -38,9 +38,7 @@ export default function App() {
                         <div className={step >= 3 ? "active" : ""}>3</div>
                     </div>
 
-                    <p className="message">
-                        {`Step ${step}: ${messages[step - 1]}`}
-                    </p>
+                    <Message step={step} />
 
                     <div className="buttons">
                         <Button bgColor="#7950f2" color="#fff" onClick={handlePrevious}>
