@@ -65,3 +65,9 @@ function Button({ bgColor, color, onClick, children }) {
         </button>
     );
 }
+
+function Message() {
+    return (
+        
+    );
+}
