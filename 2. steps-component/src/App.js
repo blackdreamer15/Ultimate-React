@@ -64,7 +64,7 @@ function Button({ bgColor, color, onClick, children }) {
     );
 }
 
-function Message() {
+function Message({ step }) {
     return (
         <p className="message">
             <h3>Step {step}</h3> {messages[step - 1]}
