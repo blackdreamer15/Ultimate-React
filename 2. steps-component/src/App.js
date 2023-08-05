@@ -60,9 +60,9 @@ export default function App() {
 
 function Button({ bgColor, color, onClick, children }) {
     return (
-        <bu tton style={{ backgroundColor: bgColor, color: color }} onClick={onClick}>
+        <button style={{ backgroundColor: bgColor, color: color }} onClick={onClick}>
             {children}
-        </bu>
+        </button>
     );
 }
 
