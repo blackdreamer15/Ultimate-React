@@ -46,10 +46,10 @@ function Accordion({ data }) {
             }
             <AccordionItem
                 num={22}
-                title={"TEST 1"}
+                title={"Thinking in React"}
                 onIsOpen={setCurOpen}
                 curOpen={curOpen}
-                key={"test 1"}
+                key={"Thinking in React"}
             >
                 <p>Allows React developers to:</p>
                 <ul>
