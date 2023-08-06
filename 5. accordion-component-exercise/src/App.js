@@ -33,14 +33,21 @@ function Accordion({ data }) {
         <div className="accordion">
             {
                 data.map((faq, index) => (
-                    <Item num={index} title={faq.title} text={faq.text} onIsOpen={setIsOpen} curOpen={curOpen} key={index} />
+                    <AccordionItem
+                        num={index}
+                        title={faq.title}
+                        text={faq.text}
+                        onIsOpen={setIsOpen}
+                        curOpen={curOpen}
+                        key={index}
+                    />
                 ))
             }
         </div>
     );
 }
 
-function Item({ num, title, text, onIsOpen, curOpen }) {
+function AccordionItem({ num, title, text, onIsOpen, curOpen }) {
     const isOpen = num === curOpen;
 
     function handleClicking() {
