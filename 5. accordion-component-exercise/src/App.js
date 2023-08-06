@@ -36,18 +36,19 @@ function Accordion({ data }) {
                     <AccordionItem
                         num={index}
                         title={faq.title}
-                        text={faq.text}
                         onIsOpen={setCurOpen}
                         curOpen={curOpen}
                         key={index}
-                    />
+                    >
+                        {faq.text}
+                    </AccordionItem>
                 ))
             }
         </div>
     );
 }
 
-function AccordionItem({ num, title, text, onIsOpen, curOpen }) {
+function AccordionItem({ num, title, onIsOpen, curOpen, children }) {
     const isOpen = num === curOpen;
 
     function handleClicking() {
@@ -71,7 +72,7 @@ function AccordionItem({ num, title, text, onIsOpen, curOpen }) {
             </p>
 
             <div className="content-box">
-                {isOpen ? `${text}` : null}
+                {isOpen ? `${children}` : null}
             </div>
         </div >
     );
