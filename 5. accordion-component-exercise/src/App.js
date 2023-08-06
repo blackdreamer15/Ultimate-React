@@ -66,7 +66,8 @@ function AccordionItem({ num, title, onIsOpen, curOpen, children }) {
     const isOpen = num === curOpen;
 
     function handleClicking() {
-        onIsOpen(num);
+        if (isOpen) onIsOpen(null);
+        else onIsOpen(num);
     }
     ;
     return (
