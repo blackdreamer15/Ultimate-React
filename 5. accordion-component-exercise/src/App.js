@@ -71,9 +71,11 @@ function AccordionItem({ num, title, onIsOpen, curOpen, children }) {
                 {isOpen ? "-" : "+"}
             </p>
 
-            <div className="content-box">
-                {isOpen ? `${children}` : null}
-            </div>
+            {isOpen &&
+                <div className="content-box">
+                    {children}
+                </div>
+            }
         </div >
     );
 }
