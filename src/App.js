@@ -164,6 +164,7 @@ function AddFriendForm({ friendList, onSetFriendList }) {
 function SplitBillForm({ selectedFriend }) {
   const [bill, setBill] = useState("");
   const [userExpense, setUserExpense] = useState("");
+  const [whoPays, setWhoPays] = useState();
 
   function handleChange() {
 
@@ -187,7 +188,7 @@ function SplitBillForm({ selectedFriend }) {
       <input type="text" disabled />
 
       <label>🤑 Who is paying the bill?</label>
-      <select onChange={(e) =>}>
+      <select onChange={(e) => }>
         <option value="user">You</option>
         <option value="friend">{selectedFriend.name}</option>
       </select>
