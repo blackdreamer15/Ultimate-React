@@ -166,7 +166,7 @@ function SplitBillForm({ selectedFriend }) {
   const [userExpense, setUserExpense] = useState("");
   const [whoPays, setWhoPays] = useState("user");
 
-  function handleChange() {
+  function handleSplitBill() {
 
   }
 
@@ -195,7 +195,7 @@ function SplitBillForm({ selectedFriend }) {
         <option value="friend">{selectedFriend.name}</option>
       </select>
 
-      <Button>Split bill</Button>
+      <Button onClick={handleSplitBill}>Split bill</Button>
     </form>
   );
 }
