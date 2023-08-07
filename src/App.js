@@ -187,7 +187,7 @@ function SplitBillForm({ selectedFriend }) {
       <input type="text" disabled />
 
       <label>🤑 Who is paying the bill?</label>
-      <select onChange={handleChange}>
+      <select onChange={(e) =>}>
         <option value="user">You</option>
         <option value="friend">{selectedFriend.name}</option>
       </select>
