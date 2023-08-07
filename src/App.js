@@ -165,6 +165,10 @@ function SplitBillForm({ selectedFriend }) {
   const [bill, setBill] = useState("");
   const [userExpense, setUserExpense] = useState("");
 
+  function handleChange() {
+
+  }
+
   return (
     <form className="form-split-bill">
       <h2>Split a bill with {selectedFriend.name}</h2>
