@@ -188,7 +188,7 @@ function SplitBillForm({ selectedFriend }) {
       <input type="text" disabled />
 
       <label>🤑 Who is paying the bill?</label>
-      <select onChange={(e) => }>
+      <select onChange={(e) => setWhoPays(e.target.value)}>
         <option value="user">You</option>
         <option value="friend">{selectedFriend.name}</option>
       </select>
