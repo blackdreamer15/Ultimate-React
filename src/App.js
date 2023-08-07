@@ -42,6 +42,7 @@ export default function App() {
     setSelectedFriend(currSelected => (
       currSelected?.id === friend.id ? null : friend
     ));
+    setShowAddFriend(false);
   }
 
   return (
