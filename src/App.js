@@ -164,6 +164,7 @@ function AddFriendForm({ friendList, onSetFriendList }) {
 function SplitBillForm({ selectedFriend }) {
   const [bill, setBill] = useState("");
   const [userExpense, setUserExpense] = useState("");
+  const friendExpense = bill && userExpense ? bill - userExpense : "";
   const [whoPays, setWhoPays] = useState("user");
 
   function handleSplitBill() {
@@ -195,7 +196,7 @@ function SplitBillForm({ selectedFriend }) {
         <option value="friend">{selectedFriend.name}</option>
       </select>
 
-      <Button onClick={handleSplitBill}>Split bill</Button>
+      <Button onClick={(e) => handleSplitBill(e)}>Split bill</Button>
     </form>
   );
 }
