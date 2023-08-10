@@ -183,7 +183,10 @@ function SplitBillForm({ selectedFriend }) {
       <label>🧍 Your expense</label>
       <input type="text" value={userExpense}
         placeholder="Your expense"
-        onChange={e => setUserExpense(Number(e.target.value))} />
+        onChange={e => setUserExpense(
+          Number(e.target.value) > bill ?
+            userExpense : Number(e.target.value)
+        )} />
 
       <label>👫 {selectedFriend.name}'s expense</label>
       <input type="text" disabled value={friendExpense} />
