@@ -180,7 +180,7 @@ function SplitBillForm({ selectedFriend }) {
         <option value="friend">{selectedFriend.name}</option>
       </select>
 
-      <Button onClick={(e) => handleSplitBill(e)}>Split bill</Button>
+      <Button onClick={() => handleSplitBill()}>Split bill</Button>
     </form>
   );
 }
