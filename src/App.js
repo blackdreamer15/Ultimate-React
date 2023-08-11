@@ -147,7 +147,9 @@ function SplitBillForm({ selectedFriend }) {
   const friendExpense = bill && userExpense ? bill - userExpense : "";
   const [whoPays, setWhoPays] = useState("user");
 
-  function handleSplitBill() {
+  function handleSplitBill(e) {
+    e.preventDefault();
+
 
   }
 
