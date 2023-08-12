@@ -25,7 +25,7 @@ export default function App() {
     setShowAddFriend(false);
   }
 
-  function splitBill() {
+  function splitBill(expense) {
 
   }
 
@@ -155,6 +155,8 @@ function SplitBillForm({ selectedFriend, onSplitBill }) {
     e.preventDefault();
 
     if (!bill || !userExpense) return;
+
+    onSplitBill(whoPays === "user" ? userExpense : -userExpense);
   }
 
   return (
