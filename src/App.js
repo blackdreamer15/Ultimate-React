@@ -25,6 +25,10 @@ export default function App() {
     setShowAddFriend(false);
   }
 
+  function splitBill() {
+
+  }
+
   return (
     <div className="app">
       <div className="sidebar">
