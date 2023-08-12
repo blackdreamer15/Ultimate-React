@@ -26,7 +26,7 @@ export default function App() {
   }
 
   function splitBill(expense) {
-
+    console.log(expense);
   }
 
   return (
@@ -156,7 +156,7 @@ function SplitBillForm({ selectedFriend, onSplitBill }) {
 
     if (!bill || !userExpense) return;
 
-    onSplitBill(whoPays === "user" ? userExpense : -userExpense);
+    onSplitBill(whoPays === "user" ? friendExpense : -userExpense);
   }
 
   return (
