@@ -147,14 +147,14 @@ function SplitBillForm({ selectedFriend }) {
   const friendExpense = bill && userExpense ? bill - userExpense : "";
   const [whoPays, setWhoPays] = useState("user");
 
-  function handleSplitBill() {
+  function handleSplitBill(e) {
     selectedFriend.balance = userExpense - friendExpense;
 
 
   }
 
   return (
-    <form className="form-split-bill" onSubmit={handleSplitBill}>
+    <form className="form-split-bill" onSubmit={(e) => handleSplitBill(e)}>
       <h2>Split a bill with {selectedFriend.name}</h2>
 
       <label>💰 BIll value</label>
