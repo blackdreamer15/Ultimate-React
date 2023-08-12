@@ -148,8 +148,9 @@ function SplitBillForm({ selectedFriend }) {
   const [whoPays, setWhoPays] = useState("user");
 
   function handleSplitBill() {
-
     selectedFriend.balance = userExpense - friendExpense;
+
+
   }
 
   return (
@@ -180,7 +181,7 @@ function SplitBillForm({ selectedFriend }) {
         <option value="friend">{selectedFriend.name}</option>
       </select>
 
-      <Button onClick={() => handleSplitBill()}>Split bill</Button>
-    </form>
+      <Button>Split bill</Button>
+    </form >
   );
 }
