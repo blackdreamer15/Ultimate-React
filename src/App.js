@@ -145,7 +145,7 @@ function AddFriendForm({ friendList, onSetFriendList }) {
   );
 }
 
-function SplitBillForm({ selectedFriend }) {
+function SplitBillForm({ selectedFriend, onSplitBill }) {
   const [bill, setBill] = useState("");
   const [userExpense, setUserExpense] = useState("");
   const friendExpense = bill && userExpense ? bill - userExpense : "";
