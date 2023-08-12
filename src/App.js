@@ -150,9 +150,7 @@ function SplitBillForm({ selectedFriend }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    selectedFriend.balance = userExpense - friendExpense;
-
-
+    if (!bill || !userExpense) return;
   }
 
   return (
