@@ -26,9 +26,9 @@ export default function App() {
   }
 
   function splitBill(value) {
-    friendList.map(friend => (
+    setFriendList(friendList.map(friend => (
       friend.id === selectedFriend.id ? { ...friend, balance: friend.balance + value } : friend
-    ))
+    )));
   }
 
   return (
