@@ -29,6 +29,8 @@ export default function App() {
     setFriendList(friendList.map(friend => (
       friend.id === selectedFriend.id ? { ...friend, balance: friend.balance + value } : friend
     )));
+
+    setSelectedFriend(null);
   }
 
   return (
