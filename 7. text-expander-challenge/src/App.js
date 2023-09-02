@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function App() {
   return (
     <div>
@@ -41,6 +43,9 @@ function TextExpander({
   expanded = false,
   buttonColor = "#0000ff",
 }) {
+
+  const [isExpanded, setIsExpanded] = useState(expanded);
+
   return (
     <div
       className={className ? className : null}
