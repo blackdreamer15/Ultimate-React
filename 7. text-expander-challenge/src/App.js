@@ -45,7 +45,9 @@ function TextExpander({
     <div
       className={className ? className : null}
     >
-      <span>{children}</span>
+      <span>
+        {expanded ? children : "UNTIL THEN"}
+      </span>
 
       <button style={{ color: buttonColor }}>{
         !expanded ?
