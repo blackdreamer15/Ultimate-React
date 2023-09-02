@@ -46,7 +46,10 @@ function TextExpander({
       className={className ? className : null}
     >
       <span>
-        {expanded ? children : "UNTIL THEN"}
+        {expanded ?
+          children :
+          `${children.split(" ").slice(0, collapsedNumWords).join(" ")}...`
+        }
       </span>
 
       <button style={{ color: buttonColor }}>{
