@@ -47,7 +47,7 @@ function TextExpander({
     >
       <span>{children}</span>
 
-      <button>{
+      <button style={{ color: buttonColor }}>{
         !expanded ?
           expandButtonText : collapseButtonText
       }</button>
