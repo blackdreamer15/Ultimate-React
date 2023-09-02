@@ -50,6 +50,15 @@ function TextExpander({
     setIsExpanded((isExpanded) => !isExpanded);
   }
 
+  const buttonStyle = {
+    background: "none",
+    border: "none",
+    font: "inherit",
+    cursor: "pointer",
+    marginLeft: "6px",
+    color: buttonColor
+  };
+
   return (
     <div
       className={className ? className : null}
@@ -63,7 +72,7 @@ function TextExpander({
       </span>
 
       <button
-        style={{ color: buttonColor }}
+        style={buttonStyle}
         onClick={handleExpand}
       >
         {
@@ -71,6 +80,6 @@ function TextExpander({
             expandButtonText : collapseButtonText
         }
       </button>
-    </div>
+    </div >
   );
 }
