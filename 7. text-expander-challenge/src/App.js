@@ -48,7 +48,7 @@ function TextExpander({
       <span>{children}</span>
 
       <button>{
-        expanded ?
+        !expanded ?
           expandButtonText : collapseButtonText
       }</button>
     </div>
