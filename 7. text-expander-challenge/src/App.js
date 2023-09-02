@@ -43,5 +43,7 @@ function TextExpander({
   expanded = false,
   buttonColor = "#0000ff",
 }) {
-  return <div></div>;
+  return (
+    <div className="box"></div>
+  );
 }
