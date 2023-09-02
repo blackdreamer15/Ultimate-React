@@ -46,16 +46,22 @@ function TextExpander({
       className={className ? className : null}
     >
       <span>
-        {expanded ?
-          children :
-          `${children.split(" ").slice(0, collapsedNumWords).join(" ")}...`
+        {
+          expanded ?
+            children :
+            `${children.split(" ").slice(0, collapsedNumWords).join(" ")}...`
         }
       </span>
 
-      <button style={{ color: buttonColor }}>{
-        !expanded ?
-          expandButtonText : collapseButtonText
-      }</button>
+      <button
+        style={{ color: buttonColor }}
+        onClick={handleExpand}
+      >
+        {
+          !expanded ?
+            expandButtonText : collapseButtonText
+        }
+      </button>
     </div>
   );
 }
