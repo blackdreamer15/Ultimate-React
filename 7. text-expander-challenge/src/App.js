@@ -45,7 +45,8 @@ function TextExpander({
     <div
       className={className ? className : null}
     >
-      {children}
+      <span>{children}</span>
+      <button>{expandButtonText}</button>
     </div>
   );
 }
