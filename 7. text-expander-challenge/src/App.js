@@ -34,6 +34,14 @@ export default function App() {
   );
 }
 
-function TextExpander({ children }) {
+function TextExpander({
+  children,
+  className = "",
+  collapsedNumWords = 10,
+  expandButtonText = "Show more",
+  collapseButtonText = "Show less",
+  expanded = false,
+  buttonColor = "#0000ff",
+}) {
   return <div></div>;
 }
