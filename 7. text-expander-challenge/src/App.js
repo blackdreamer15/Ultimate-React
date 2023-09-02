@@ -42,6 +42,8 @@ function TextExpander({
   buttonColor = "#0000ff",
 }) {
   return (
-    <div className="box"></div>
+    <div className="box">
+      {children}
+    </div>
   );
 }
