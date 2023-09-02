@@ -46,7 +46,11 @@ function TextExpander({
       className={className ? className : null}
     >
       <span>{children}</span>
-      <button>{expandButtonText}</button>
+
+      <button>{
+        expanded ?
+          expandButtonText : collapseButtonText
+      }</button>
     </div>
   );
 }
