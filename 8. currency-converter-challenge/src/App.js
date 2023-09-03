@@ -26,7 +26,7 @@ export default function App() {
       }
 
       if (quoteCurrency === baseCurrency) {
-        setAmount(amount);
+        return setConversion(amount);
       }
 
       fetchConversion();
