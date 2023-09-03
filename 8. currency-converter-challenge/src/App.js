@@ -5,7 +5,11 @@ export default function App() {
 
   return (
     <div className="App">
-      <input type="text" value={query} />
+      <input
+        type="text"
+        value={query}
+        onChange={e => setQuery(e.target.value)}
+      />
 
       <select>
         <option value="USD">USD</option>
