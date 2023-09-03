@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function App() {
   const [query, setQuery] = useState("");
-  const [fromCurrency, setFromCurrency] = useState("");
+  const [baseCurrency, setBaseCurrency] = useState("");
 
   return (
     <div className="App">
@@ -12,7 +12,7 @@ export default function App() {
         onChange={e => setQuery(Number(e.target.value))}
       />
 
-      <select value={fromCurrency}>
+      <select value={baseCurrency}>
         <option value="USD">USD</option>
         <option value="EUR">EUR</option>
         <option value="CAD">CAD</option>
