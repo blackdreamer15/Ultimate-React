@@ -17,7 +17,7 @@ export default function App() {
 
       fetchConversion();
 
-    }, []);
+    }, [amount, baseCurrency, quoteCurrency]);
 
 
   return (
