@@ -5,7 +5,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <input type="text" />
+      <input type="text" value={query} />
 
       <select>
         <option value="USD">USD</option>
