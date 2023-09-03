@@ -25,6 +25,10 @@ export default function App() {
         }
       }
 
+      if (quoteCurrency === baseCurrency) {
+        setAmount(amount);
+      }
+
       fetchConversion();
 
     }, [amount, baseCurrency, quoteCurrency]);
