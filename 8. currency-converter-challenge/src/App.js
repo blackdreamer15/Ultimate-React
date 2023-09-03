@@ -13,7 +13,7 @@ export default function App() {
           const res = await fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=${baseCurrency}&to=${quoteCurrency}`);
 
           const data = await res.json();
-          // console.log(data.rates.USD);
+          setConversion(data.rates[quoteCurrency]);
         }
         catch (err) {
           console.error(err.message);
