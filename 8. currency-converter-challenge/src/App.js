@@ -9,10 +9,15 @@ export default function App() {
   useEffect(
     function () {
       async function fetchConversion() {
-        const res = await fetch(`https://api.frankfurter.app/latest?${amount}=100&from=${baseCurrency}&to=${quoteCurrency}`);
+        try {
+          const res = await fetch(`https://api.frankfurter.app/latest?${amount}=100&from=${baseCurrency}&to=${quoteCurrency}`);
 
-        const data = await res.json();
-        console.log(data);
+          const data = await res.json();
+          console.log(data);
+        }
+        catch (err) {
+          console.error(err.message);
+        }
       }
 
       fetchConversion();
