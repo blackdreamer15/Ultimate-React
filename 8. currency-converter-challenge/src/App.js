@@ -4,7 +4,7 @@ export default function App() {
   const [amount, setAmount] = useState(1);
   const [baseCurrency, setBaseCurrency] = useState("EUR");
   const [quoteCurrency, setQuoteCurrency] = useState("USD");
-
+  const [conversion, setConversion] = useState(0);
 
   useEffect(
     function () {
