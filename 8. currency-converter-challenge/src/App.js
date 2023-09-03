@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
   const [amount, setAmount] = useState("");
@@ -10,8 +10,12 @@ export default function App() {
     function () {
       async function fetchConversion() {
         const res = await fetch(`https://api.frankfurter.app/latest?${amount}=100&from=${baseCurrency}&to=${quoteCurrency}`);
+
+        const data = await res.json();
+        console.log(data);
       }
 
+      fetchConversion();
 
     }, []);
 
