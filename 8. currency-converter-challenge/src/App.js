@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 export default function App() {
-  const [amount, setAmount] = useState("");
-  const [baseCurrency, setBaseCurrency] = useState("");
-  const [quoteCurrency, setQuoteCurrency] = useState("");
+  const [amount, setAmount] = useState(1);
+  const [baseCurrency, setBaseCurrency] = useState("EUR");
+  const [quoteCurrency, setQuoteCurrency] = useState("USD");
 
 
   useEffect(
