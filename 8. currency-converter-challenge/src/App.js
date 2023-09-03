@@ -5,6 +5,17 @@ export default function App() {
   const [baseCurrency, setBaseCurrency] = useState("");
   const [quoteCurrency, setQuoteCurrency] = useState("");
 
+
+  useEffect(
+    function () {
+      async function fetchConversion() {
+
+      }
+
+
+    }, []);
+
+
   return (
     <div className="App">
       <input
