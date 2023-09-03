@@ -2,13 +2,13 @@ import { useState } from "react";
 
 export default function App() {
   const [query, setQuery] = useState("");
-
+  console.log(query);
   return (
     <div className="App">
       <input
         type="text"
         value={query}
-        onChange={e => setQuery(e.target.value)}
+        onChange={e => setQuery(Number(e.target.value))}
       />
 
       <select>
