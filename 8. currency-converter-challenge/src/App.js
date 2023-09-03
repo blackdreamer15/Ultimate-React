@@ -12,7 +12,9 @@ export default function App() {
         onChange={e => setQuery(Number(e.target.value))}
       />
 
-      <select value={baseCurrency}>
+      <select value={baseCurrency}
+        onChange={e => setBaseCurrency(e.target.value)}
+      >
         <option value="USD">USD</option>
         <option value="EUR">EUR</option>
         <option value="CAD">CAD</option>
