@@ -51,7 +51,7 @@ export default function App() {
         <option value="INR">INR</option>
       </select>
 
-      <p>OUTPUT</p>
+      <p>{conversion}</p>
     </div>
   );
 }
