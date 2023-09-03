@@ -10,10 +10,10 @@ export default function App() {
     function () {
       async function fetchConversion() {
         try {
-          const res = await fetch(`https://api.frankfurter.app/latest?${amount}=100&from=${baseCurrency}&to=${quoteCurrency}`);
+          const res = await fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=${baseCurrency}&to=${quoteCurrency}`);
 
           const data = await res.json();
-          console.log(data);
+          // console.log(data.rates.USD);
         }
         catch (err) {
           console.error(err.message);
