@@ -2,7 +2,8 @@ import { useState } from "react";
 
 export default function App() {
   const [query, setQuery] = useState("");
-  console.log(query);
+  const [fromCurrency, setFromCurrency] = useState("");
+
   return (
     <div className="App">
       <input
