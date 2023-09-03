@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function App() {
-  const [query, setQuery] = useState("");
+  const [amount, setAmount] = useState("");
   const [baseCurrency, setBaseCurrency] = useState("");
   const [quoteCurrency, setQuoteCurrency] = useState("");
 
@@ -20,8 +20,8 @@ export default function App() {
     <div className="App">
       <input
         type="text"
-        value={query}
-        onChange={e => setQuery(Number(e.target.value))}
+        value={amount}
+        onChange={e => setAmount(Number(e.target.value))}
       />
 
       <select value={baseCurrency}
