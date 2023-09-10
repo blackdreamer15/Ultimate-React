@@ -9,7 +9,10 @@ class Counter extends React.Component {
 
   render() {
     return (
-      <p>Hello React!</p>
+      <div>
+        <button>-</button>
+        <button>+</button>
+      </div>
     );
   }
 }
