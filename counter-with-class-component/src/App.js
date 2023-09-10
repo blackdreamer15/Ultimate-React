@@ -22,12 +22,22 @@ class Counter extends React.Component {
     date.setDate(date.getDate() + this.state.count)
 
     return (
-      <div>
-        <button onClick={this.handleDecrement}>-</button>
+      <div style={{ fontSize: "32px", display: "flex", justifyContent: "center" }}>
+        <button
+          onClick={this.handleDecrement}
+          style={{ height: "35px", width: "35px" }}
+        >
+          -
+        </button>
 
         <span>{date.toDateString()} [{this.state.count}]</span>
 
-        <button onClick={this.handleIncrement}>+</button>
+        <button
+          onClick={this.handleIncrement}
+          style={{ height: "35px", width: "35px" }}
+        >
+          +
+        </button>
       </div>
     );
   }
