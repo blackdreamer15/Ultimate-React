@@ -14,7 +14,7 @@ class Counter extends React.Component {
 
         <span>{this.state.count}</span>
 
-        <button>+</button>
+        <button onClick={handleIncrement}>+</button>
       </div>
     );
   }
