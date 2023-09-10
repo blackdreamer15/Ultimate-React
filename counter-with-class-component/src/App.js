@@ -10,8 +10,10 @@ class Counter extends React.Component {
   render() {
     return (
       <div>
-        <button>-</button>
+        <button onClick={handleDecrement}>-</button>
+
         <span>{this.state.count}</span>
+
         <button>+</button>
       </div>
     );
