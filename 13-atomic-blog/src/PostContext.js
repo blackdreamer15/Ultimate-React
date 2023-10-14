@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { createRandomPost } from "./RandomPost";
 
 const PostContext = createContext();
@@ -43,4 +43,13 @@ function PostProvider({ chidren }) {
     );
 }
 
-export { PostProvider };
+function usePost() {
+    const context = useContext(PostContext);
+
+    if (context === undefined)
+        throw new Error("PostContext was used outside PostProvider");
+
+    return context;
+}
+
+export { PostProvider, usePost };
