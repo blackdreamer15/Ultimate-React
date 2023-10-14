@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { createRandomPost } from "./RandomPost";
+import { PostProvider } from "./PostContext";
 
 function App() {
   const [isFakeDark, setIsFakeDark] = useState(false);
@@ -22,10 +23,12 @@ function App() {
         {isFakeDark ? "☀️" : "🌙"}
       </button>
 
-      <Header />
-      <Main />
-      <Archive />
-      <Footer />
+      <PostProvider>
+        <Header />
+        <Main />
+        <Archive />
+        <Footer />
+      </PostProvider >
     </section>
   );
 }
