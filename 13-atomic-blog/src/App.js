@@ -45,7 +45,12 @@ function App() {
   const PostContext = createContext();
 
   return (
-    <PostContext.Provider>
+    <PostContext.Provider value={{
+      posts: searchedPosts,
+      onClearPosts: handleClearPosts,
+      searchQuery,
+      setSearchQuery,
+    }}>
       <section>
         <button
           onClick={() => setIsFakeDark((isFakeDark) => !isFakeDark)}
