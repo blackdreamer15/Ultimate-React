@@ -1,6 +1,10 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { faker } from "@faker-js/faker";
 
+
+const PostContext = createContext();
+
+
 function createRandomPost() {
   return {
     title: `${faker.hacker.adjective()} ${faker.hacker.noun()}`,
@@ -40,9 +44,6 @@ function App() {
     },
     [isFakeDark]
   );
-
-
-  const PostContext = createContext();
 
   return (
     <PostContext.Provider value={{
