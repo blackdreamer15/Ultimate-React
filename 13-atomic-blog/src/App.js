@@ -112,7 +112,7 @@ function Posts({ posts }) {
   );
 }
 
-function FormAddPost({onAddPost}) {
+function FormAddPost({ onAddPost }) {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
 
