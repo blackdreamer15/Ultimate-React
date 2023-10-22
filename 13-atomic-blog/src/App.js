@@ -141,8 +141,7 @@ function FormAddPost({ onAddPost }) {
   );
 }
 
-function List({posts}) {
-
+function List({ posts }) {
   return (
     <ul>
       {posts.map((post, i) => (
