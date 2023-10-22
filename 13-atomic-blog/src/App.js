@@ -104,10 +104,10 @@ function Main({ posts, onAddPost }) {
   );
 }
 
-function Posts({posts}) {
+function Posts({ posts }) {
   return (
     <section>
-      <List posts={posts}/>
+      <List posts={posts} />
     </section>
   );
 }
