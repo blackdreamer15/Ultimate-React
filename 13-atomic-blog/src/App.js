@@ -85,8 +85,7 @@ function Posts() {
   );
 }
 
-function FormAddPost() {
-  const { onAddPost } = usePosts();
+function FormAddPost({onAddPost}) {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
 
