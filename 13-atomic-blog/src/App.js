@@ -36,8 +36,7 @@ function App() {
   );
 }
 
-function Header() {
-  const { onClearPosts } = usePosts();
+function Header({onClearPosts}) {
 
   return (
     <header>
