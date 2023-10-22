@@ -50,10 +50,15 @@ function App() {
         {isFakeDark ? "☀️" : "🌙"}
       </button>
 
-        <Header posts={posts} onClearPosts={handleClearPosts} searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
-        <Main onAddPost={handleAddPost} posts={posts}/>
-        <Archive onAddPost={handleAddPost}/>
-        <Footer />
+      <Header
+        posts={searchedPosts}
+        onClearPosts={handleClearPosts}
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+      />
+      <Main posts={searchedPosts} onAddPost={handleAddPost} />
+      <Archive onAddPost={handleAddPost} />
+      <Footer />
     </section>
   );
 }
