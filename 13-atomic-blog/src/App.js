@@ -63,8 +63,7 @@ function SearchPosts({usePosts}) {
   );
 }
 
-function Results() {
-  const { posts } = usePosts();
+function Results({usePosts}) {
 
   return <p>🚀 {posts.length} atomic posts found</p>;
 }
