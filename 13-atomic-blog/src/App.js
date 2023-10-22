@@ -114,8 +114,7 @@ function FormAddPost({onAddPost}) {
   );
 }
 
-function List() {
-  const { posts } = usePosts();
+function List({posts}) {
 
   return (
     <ul>
