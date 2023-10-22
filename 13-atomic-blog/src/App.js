@@ -81,8 +81,7 @@ function Header({ posts, onClearPosts, searchQuery, setSearchQuery }) {
   );
 }
 
-function SearchPosts({searchQuery, setSearchQuery}) {
-
+function SearchPosts({ searchQuery, setSearchQuery }) {
   return (
     <input
       value={searchQuery}
