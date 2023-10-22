@@ -52,8 +52,7 @@ function Header({onClearPosts}) {
   );
 }
 
-function SearchPosts() {
-  const { searchQuery, setSearchQuery } = usePosts();
+function SearchPosts({usePosts}) {
 
   return (
     <input
