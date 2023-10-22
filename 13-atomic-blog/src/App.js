@@ -63,16 +63,18 @@ function App() {
   );
 }
 
-function Header({onClearPosts, posts, searchQuery, setSearchQuery}) {
-
+function Header({ posts, onClearPosts, searchQuery, setSearchQuery }) {
   return (
     <header>
       <h1>
         <span>⚛️</span>The Atomic Blog
       </h1>
       <div>
-        <Results posts={posts}/>
-        <SearchPosts searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
+        <Results posts={posts} />
+        <SearchPosts
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+        />
         <button onClick={onClearPosts}>Clear posts</button>
       </div>
     </header>
