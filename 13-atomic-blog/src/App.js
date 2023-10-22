@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { faker } from "@faker-js/faker";
-import { PostProvider, usePosts } from "./PostContext";
 
 function createRandomPost() {
   return {
@@ -29,12 +28,10 @@ function App() {
         {isFakeDark ? "☀️" : "🌙"}
       </button>
 
-      <PostProvider>
         <Header />
         <Main />
         <Archive />
         <Footer />
-      </PostProvider>
     </section>
   );
 }
