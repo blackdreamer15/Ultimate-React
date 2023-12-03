@@ -18,6 +18,14 @@ function Calculator({ workouts, allowSound }) {
 		sound.play();
 	};
 
+	const handleInc = () => {
+		setDuration((duration) => Math.floor(duration) + 1);
+	};
+
+	const handleDec = () => {
+		setDuration((duration) => (duration > 1 ? Math.floor(duration) + 1 : 0));
+	};
+
 	useEffect(
 		function () {
 			setDuration((number * sets * speed) / 60 + (sets - 1) * durationBreak);
