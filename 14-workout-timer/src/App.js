@@ -32,7 +32,7 @@ function App() {
 				numExercises: partOfDay === "AM" ? 5 : 4,
 			},
 		];
-	}, []);
+	}, [partOfDay]);
 
 	function formatTime(date) {
 		return new Intl.DateTimeFormat("en", {
