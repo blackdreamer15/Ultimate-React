@@ -23,7 +23,7 @@ function Calculator({ workouts, allowSound }) {
 	};
 
 	const handleDec = () => {
-		setDuration((duration) => (duration > 1 ? Math.floor(duration) + 1 : 0));
+		setDuration((duration) => (duration > 1 ? Math.floor(duration) - 1 : 0));
 	};
 
 	useEffect(
@@ -82,13 +82,13 @@ function Calculator({ workouts, allowSound }) {
 				</div>
 			</form>
 			<section>
-				<button onClick={() => handleDec}>–</button>
+				<button onClick={handleDec}>–</button>
 				<p>
 					{mins < 10 && "0"}
 					{mins}:{seconds < 10 && "0"}
 					{seconds}
 				</p>
-				<button onClick={() => handleInc}>+</button>
+				<button onClick={handleInc}>+</button>
 			</section>
 		</>
 	);
