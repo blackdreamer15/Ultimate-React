@@ -82,13 +82,13 @@ function Calculator({ workouts, allowSound }) {
 				</div>
 			</form>
 			<section>
-				<button onClick={() => {}}>–</button>
+				<button onClick={() => handleDec}>–</button>
 				<p>
 					{mins < 10 && "0"}
 					{mins}:{seconds < 10 && "0"}
 					{seconds}
 				</p>
-				<button onClick={() => {}}>+</button>
+				<button onClick={() => handleInc}>+</button>
 			</section>
 		</>
 	);
