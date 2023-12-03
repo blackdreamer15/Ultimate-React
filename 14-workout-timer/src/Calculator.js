@@ -12,32 +12,32 @@ function Calculator({ workouts, allowSound }) {
 	const mins = Math.floor(duration);
 	const seconds = (duration - mins) * 60;
 
-	const playSound = useCallback(
-		function () {
-			if (!allowSound) return;
-			const sound = new Audio(clickSound);
-			sound.play();
-		},
-		[allowSound]
-	);
-
 	const handleInc = () => {
 		setDuration((duration) => Math.floor(duration) + 1);
-		playSound();
 	};
 
 	const handleDec = () => {
 		setDuration((duration) => (duration > 1 ? Math.floor(duration) - 1 : 0));
-		playSound();
 	};
 
 	useEffect(
 		function () {
 			setDuration((number * sets * speed) / 60 + (sets - 1) * durationBreak);
+		},
+		[number, sets, speed, durationBreak]
+	);
+
+	useEffect(
+		function () {
+			const playSound = function () {
+				if (!allowSound) return;
+				const sound = new Audio(clickSound);
+				sound.play();
+			};
 
 			playSound();
 		},
-		[number, sets, speed, durationBreak, playSound]
+		[duration, allowSound]
 	);
 
 	return (
