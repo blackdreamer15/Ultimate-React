@@ -40,6 +40,11 @@ function Calculator({ workouts, allowSound }) {
 		[duration, allowSound]
 	);
 
+	useEffect(
+		() => (document.title = `Your ${number}-exercise workout`),
+		[number]
+	);
+
 	return (
 		<>
 			<form>
